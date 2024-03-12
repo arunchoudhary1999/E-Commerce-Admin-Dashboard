@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.BarChartOne01 {
+  /* background-color: rgb(247, 242, 242); */
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  width: 32%;
+}
+
+.BarChartTwo01 {
+  /* background-color: rgb(247, 242, 242); */
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  width: 32%;
+}
+
+.PieChartOne01 {
+  /* background-color: rgb(247, 242, 242); */
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  width: 32%;
+}
+
+.buttonSideBarIssue:hover {
+  background-color: white !important;
+  box-shadow: none !important;
+}
+
+.buttonSideBarIssue {
+  background-color: white !important;
+  box-shadow: none !important;
+}
+
+.OrderManagement01 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  width: 32%;
+}
+
+.OrderManagementButton {
+  background-color: white !important;
+  box-shadow: none !important;
+}
+
+.pendingButton:hover {
+  background: none !important;
+}
+
+.OrderManagementModel {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px 15px 0 15px;
+  width: 32%;
+}
+
+.AddProduct01 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  width: 70%;
+  height: 50%;
+
+}
+
+
+.AddProduct02 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  width: 28%;
+  height: 50%;
+}
+
+.AddProduct0101 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 15px;
+  width: 49%;
+}
+
+.AddProduct0102 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 15px;
+  width: 49%;
+}
+
+.addproducttextfield {
+  height: 45% !important;
+}
+
+.AddProductImageUploadCard {
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 1px solid rgb(211, 211, 211);
+
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+  padding: 0 15px;
+  width: 100%;
+}
+
+.addproductUploadImageHover:hover {
+  background-color: white !important;
+}
+
+.AddProductSmallImageUploadCard {
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 0px 15px;
+  width: 48%;
+  margin-bottom: 14px;
+}
+
+.AddProductBlankSmallImageUploadCard {
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 2px dashed rgb(211, 211, 211);
+  padding: 15px;
+  width: 48%;
+}
+
+.ProductManagementProductDetails00 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 0 15px 0 15px;
+  width: 15%;
+}
+
+.ProductManagementProductDetails01 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px 15px 0 15px;
+  width: 26.5%;
+}
+
+.ProductManagementProductDetailsSecond00 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px 15px 0 15px;
+  width: 49%;
+}
+
+.AgentManagement01 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  width: 100%;
+}
+
+.AgentManagement0101 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 15px;
+  width: 49%;
+}
+
+.AgentManagement0102 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 15px;
+  width: 49%;
+}
+
+.AgentManagementDetailsSecond00 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px 15px 0 15px;
+  width: 49%;
+}
+
+.AgentModalCard00 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px 15px 0 15px;
+  margin-bottom: 20px;
+}
+
+.UserManagementModal0101 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 15px;
+  width: 100%;
+}
+
+.UserManagementModal01 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  width: 100%;
+}
+
+.UserManagementModal0101 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 15px;
+  width: 100%;
+}
+
+.CustomerSummary00 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px 15px 0 15px;
+  width: 27%;
+}
+
+.CustomerSummary01 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px 15px 0 15px;
+  width: 22%;
+}
+
+.CustomerSummary02 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px 15px 0 15px;
+  margin-bottom: 20px;
+  width: 49%;
+
+}
