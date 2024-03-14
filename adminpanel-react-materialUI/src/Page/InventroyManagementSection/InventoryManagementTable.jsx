@@ -20,13 +20,13 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
 
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
 import Divider from "@mui/material/Divider";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 
 function createData(id, img, name, calories, fat, carbs, protein) {
   return {
@@ -294,7 +294,7 @@ EnhancedTableHead.propTypes = {
   rowCount: PropTypes.number.isRequired,
 };
 
-function UserManagementDetailsTable(props) {
+function InventoryManagementTable(props) {
   const { numSelected } = props;
 
   return (
@@ -335,7 +335,7 @@ function UserManagementDetailsTable(props) {
               id="tableTitle"
               component="div"
             >
-              Customers
+              Inventory Items
             </Typography>
             <Paper
               component="form"
@@ -396,7 +396,7 @@ function UserManagementDetailsTable(props) {
   );
 }
 
-UserManagementDetailsTable.propTypes = {
+InventoryManagementTable.propTypes = {
   numSelected: PropTypes.number.isRequired,
 };
 
@@ -468,7 +468,7 @@ export default function EnhancedTable() {
   return (
     <Box sx={{ width: "100%" }}>
       <Paper sx={{ width: "100%", mb: 2 }}>
-        <UserManagementDetailsTable numSelected={selected.length} />
+        <InventoryManagementTable numSelected={selected.length} />
         <TableContainer>
           <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle">
             <EnhancedTableHead
@@ -510,9 +510,9 @@ export default function EnhancedTable() {
                       id={labelId}
                       scope="row"
                       padding="none"
-                      // sx={{ display: "flex", alignItems: "center" }}
+                      sx={{ display: "flex", alignItems: "center" }}
                     >
-                      {/* <ImageList>
+                      <ImageList>
                         <ImageListItem>
                           <img
                             src={`${row.img}?w=164&h=164&fit=crop&auto=format`}
@@ -525,7 +525,7 @@ export default function EnhancedTable() {
                             }}
                           />
                         </ImageListItem>
-                      </ImageList> */}
+                      </ImageList>
                       {row.name}
                     </TableCell>
                     <TableCell align="right">{row.calories}</TableCell>

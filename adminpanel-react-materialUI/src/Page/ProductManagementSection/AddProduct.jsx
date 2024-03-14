@@ -46,7 +46,7 @@ export default function AddProduct() {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", background: "#FAFAFB" }}>
       <SideBar />
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "55px" }}>
         <Box sx={{ marginTop: "1rem" }}>

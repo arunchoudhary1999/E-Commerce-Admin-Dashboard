@@ -25,10 +25,13 @@ import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 
-function createData(id, name, calories, fat, carbs, protein) {
+function createData(id, img, name, calories, fat, carbs, protein) {
   return {
     id,
+    img,
     name,
     calories,
     fat,
@@ -38,19 +41,123 @@ function createData(id, name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData(1, "Cupcake", 305, 3.7, 67, 4.3),
-  createData(2, "Donut", 452, 25.0, 51, 4.9),
-  createData(3, "Eclair", 262, 16.0, 24, 6.0),
-  createData(4, "Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData(5, "Gingerbread", 356, 16.0, 49, 3.9),
-  createData(6, "Honeycomb", 408, 3.2, 87, 6.5),
-  createData(7, "Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData(8, "Jelly Bean", 375, 0.0, 94, 0.0),
-  createData(9, "KitKat", 518, 26.0, 65, 7.0),
-  createData(10, "Lollipop", 392, 0.2, 98, 0.0),
-  createData(11, "Marshmallow", 318, 0, 81, 2.0),
-  createData(12, "Nougat", 360, 19.0, 9, 37.0),
-  createData(13, "Oreo", 437, 18.0, 63, 4.0),
+  createData(
+    1,
+    "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    "Cupcake",
+    305,
+    3.7,
+    67,
+    4.3
+  ),
+  createData(
+    2,
+    "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
+    "Donut",
+    452,
+    25.0,
+    51,
+    4.9
+  ),
+  createData(
+    3,
+    "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
+    "Eclair",
+    262,
+    16.0,
+    24,
+    6.0
+  ),
+  createData(
+    4,
+    "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
+    "Frozen yoghurt",
+    159,
+    6.0,
+    24,
+    4.0
+  ),
+  createData(
+    5,
+    "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
+    "Gingerbread",
+    356,
+    16.0,
+    49,
+    3.9
+  ),
+  createData(
+    6,
+    "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
+    "Honeycomb",
+    408,
+    3.2,
+    87,
+    6.5
+  ),
+  createData(
+    7,
+    "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
+    "Ice cream sandwich",
+    237,
+    9.0,
+    37,
+    4.3
+  ),
+  createData(
+    8,
+    "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
+    "Jelly Bean",
+    375,
+    0.0,
+    94,
+    0.0
+  ),
+  createData(
+    9,
+    "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
+    "KitKat",
+    518,
+    26.0,
+    65,
+    7.0
+  ),
+  createData(
+    10,
+    "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
+    "Lollipop",
+    392,
+    0.2,
+    98,
+    0.0
+  ),
+  createData(
+    11,
+    "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
+    "Marshmallow",
+    318,
+    0,
+    81,
+    2.0
+  ),
+  createData(
+    12,
+    "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
+    "Nougat",
+    360,
+    19.0,
+    9,
+    37.0
+  ),
+  createData(
+    13,
+    "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    "Oreo",
+    437,
+    18.0,
+    63,
+    4.0
+  ),
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -86,12 +193,19 @@ function stableSort(array, comparator) {
 }
 
 const headCells = [
+  // {
+  //   id: "images",
+  //   numeric: false,
+  //   disablePadding: true,
+  //   label: "Images",
+  // },
   {
     id: "name",
     numeric: false,
     disablePadding: true,
     label: "Dessert (100g serving)",
   },
+
   {
     id: "calories",
     numeric: true,
@@ -118,7 +232,7 @@ const headCells = [
   },
 ];
 
-function ModalTable(props) {
+function EnhancedTableHead(props) {
   const {
     onSelectAllClick,
     order,
@@ -171,7 +285,7 @@ function ModalTable(props) {
   );
 }
 
-ModalTable.propTypes = {
+EnhancedTableHead.propTypes = {
   numSelected: PropTypes.number.isRequired,
   onRequestSort: PropTypes.func.isRequired,
   onSelectAllClick: PropTypes.func.isRequired,
@@ -180,7 +294,7 @@ ModalTable.propTypes = {
   rowCount: PropTypes.number.isRequired,
 };
 
-function OrderManagementTable(props) {
+function ModalTable(props) {
   const { numSelected } = props;
 
   return (
@@ -221,7 +335,7 @@ function OrderManagementTable(props) {
               id="tableTitle"
               component="div"
             >
-              Customer Orders
+              Purchases
             </Typography>
             <Paper
               component="form"
@@ -282,7 +396,7 @@ function OrderManagementTable(props) {
   );
 }
 
-OrderManagementTable.propTypes = {
+ModalTable.propTypes = {
   numSelected: PropTypes.number.isRequired,
 };
 
@@ -354,10 +468,10 @@ export default function EnhancedTable() {
   return (
     <Box sx={{ width: "100%" }}>
       <Paper sx={{ width: "100%", mb: 2 }}>
-        <OrderManagementTable numSelected={selected.length} />
+        <ModalTable numSelected={selected.length} />
         <TableContainer>
           <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle">
-            <ModalTable
+            <EnhancedTableHead
               numSelected={selected.length}
               order={order}
               orderBy={orderBy}
@@ -395,7 +509,22 @@ export default function EnhancedTable() {
                       id={labelId}
                       scope="row"
                       padding="none"
+                      sx={{ display: "flex", alignItems: "center" }}
                     >
+                      <ImageList>
+                        <ImageListItem>
+                          <img
+                            src={`${row.img}?w=164&h=164&fit=crop&auto=format`}
+                            alt="img"
+                            loading="lazy"
+                            style={{
+                              width: 40,
+                              height: 40,
+                              background: "red",
+                            }}
+                          />
+                        </ImageListItem>
+                      </ImageList>
                       {row.name}
                     </TableCell>
                     <TableCell align="right">{row.calories}</TableCell>

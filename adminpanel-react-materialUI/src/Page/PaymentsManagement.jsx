@@ -43,7 +43,7 @@ export default function PaymentsManagement() {
     openchange(false);
   };
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", background: "#FAFAFB" }}>
       <SideBar />
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "55px" }}>
         <Box sx={{ marginTop: "1rem" }}>
@@ -64,7 +64,9 @@ export default function PaymentsManagement() {
                     alignItems: "center",
                   }}
                 >
-                  <DialogTitle variant="h5">Order Details</DialogTitle>
+                  <DialogTitle variant="h5">
+                    Order & Transaction Details
+                  </DialogTitle>
                   <DialogTitle>
                     <ClearIcon
                       sx={{
@@ -74,6 +76,7 @@ export default function PaymentsManagement() {
                         fontSize: "40px",
                         borderRadius: "10px",
                       }}
+                      onClick={closepopup}
                     />
                   </DialogTitle>
                 </Box>
@@ -306,17 +309,200 @@ export default function PaymentsManagement() {
                       </div>
                     </Box>
                     <Box>
+                      <div
+                        className="PaymentManagementModelcards"
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginBottom: "30px",
+                          }}
+                        >
+                          <PaymentIcon
+                            sx={{
+                              color: "black",
+                              background: "#ffeb99",
+                              p: 1,
+                              fontSize: "40px",
+                              borderRadius: "10px",
+                            }}
+                          />
+                        </Box>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+                            Payment Method
+                            <br />
+                            <Typography
+                              paragraph
+                              style={{ fontWeight: "600", color: "black" }}
+                            >
+                              Master Card
+                            </Typography>
+                          </Typography>
+
+                          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+                            Payment Gateway
+                            <br />
+                            <Typography
+                              paragraph
+                              style={{ fontWeight: "600", color: "black" }}
+                            >
+                              Viz Payments
+                            </Typography>
+                          </Typography>
+
+                          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+                            Payment Date
+                            <br />
+                            <Typography
+                              paragraph
+                              style={{ fontWeight: "600", color: "black" }}
+                            >
+                              12/02/2024 11:20:00 AM
+                            </Typography>
+                          </Typography>
+
+                          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+                            Payment Amount
+                            <br />
+                            <Typography
+                              paragraph
+                              style={{ fontWeight: "600", color: "black" }}
+                            >
+                              $5540.00
+                            </Typography>
+                          </Typography>
+
+                          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+                            Transaction Charges
+                            <br />
+                            <Typography
+                              paragraph
+                              style={{ fontWeight: "600", color: "black" }}
+                            >
+                              $48.00
+                            </Typography>
+                          </Typography>
+                        </Box>
+                      </div>
+                    </Box>
+                    <Box>
                       <PaymentModalTable />
+                    </Box>
+                    <Box>
+                      <div
+                        className="PaymentManagementModelcards"
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginBottom: "10px",
+                          }}
+                        >
+                          <Typography
+                            variant="h5"
+                            sx={{ color: "black", fontWeight: "500" }}
+                          >
+                            Payment Details
+                          </Typography>
+                        </Box>
+                        <Box
+                          sx={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+                            Order Amount
+                            <br />
+                            <Typography
+                              paragraph
+                              style={{ fontWeight: "600", color: "black" }}
+                            >
+                              $588.00
+                            </Typography>
+                          </Typography>
+
+                          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+                            Delivery Charges
+                            <br />
+                            <Typography
+                              paragraph
+                              style={{ fontWeight: "600", color: "black" }}
+                            >
+                              $190.00
+                            </Typography>
+                          </Typography>
+
+                          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+                            Gst On Delivery
+                            <br />
+                            <Typography
+                              paragraph
+                              style={{ fontWeight: "600", color: "black" }}
+                            >
+                              $28.98
+                            </Typography>
+                          </Typography>
+
+                          <Typography variant="h6" sx={{ fontSize: "15px" }}>
+                            Total Amount
+                            <br />
+                            <Typography
+                              paragraph
+                              style={{ fontWeight: "600", color: "black" }}
+                            >
+                              $5306.00
+                            </Typography>
+                          </Typography>
+                        </Box>
+                      </div>
                     </Box>
                   </DialogContentText>
                 </DialogContent>
                 <DialogActions>
                   <Button
                     onClick={closepopup}
-                    sx={{ background: "orange" }}
-                    variant="contained"
+                    sx={{
+                      background: "white",
+                      borderColor: "red",
+                      color: "red",
+                    }}
+                    variant="outlined"
                   >
-                    Mark is Complete | <KeyboardArrowDownIcon />
+                    Intiate Partial Refund
+                  </Button>
+                  <Button
+                    onClick={closepopup}
+                    sx={{
+                      background: "white",
+                      borderColor: "red",
+                      color: "red",
+                    }}
+                    variant="outlined"
+                  >
+                    Initiate Full Refund
                   </Button>
                   <Button
                     onClick={closepopup}
@@ -539,6 +725,7 @@ export default function PaymentsManagement() {
                   </Box>
                 </div>
               </Box>
+
               <Box>
                 <PaymentsManagementTable />
               </Box>

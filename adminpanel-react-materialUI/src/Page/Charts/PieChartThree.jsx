@@ -56,8 +56,15 @@ const PieChartThree = () => {
             alignItems: "center",
           }}
         >
-          <Typography variant="h6">
-            <ShoppingCartIcon sx={{ color: "orange" }} />
+          <Typography
+            sx={{
+              fontWeight: "700",
+              fontSize: "18px",
+              fontFamily: "Nunito",
+              color: "rgba(34, 34, 34, 1)",
+            }}
+          >
+            <ShoppingCartIcon sx={{ color: "orange", mr: 1 }} />
             Abandoned Cart
           </Typography>
 

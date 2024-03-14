@@ -26,8 +26,15 @@ const RangeChartFour = () => {
             alignItems: "center",
           }}
         >
-          <Typography variant="h6">
-            <PersonIcon style={{ marginBottom: "-4", color: "orange" }} />
+          <Typography
+            sx={{
+              fontWeight: "700",
+              fontSize: "16px",
+              fontFamily: "Nunito",
+              color: "rgba(34, 34, 34, 1)",
+            }}
+          >
+            <PersonIcon sx={{ marginBottom: "-4px", color: "orange", mr: 1 }} />
             New Users
           </Typography>
 

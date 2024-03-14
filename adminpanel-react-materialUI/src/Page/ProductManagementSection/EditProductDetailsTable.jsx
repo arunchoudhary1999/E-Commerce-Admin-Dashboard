@@ -510,9 +510,9 @@ export default function EnhancedTable() {
                       id={labelId}
                       scope="row"
                       padding="none"
-                      sx={{ display: "flex", alignItems: "center" }}
+                      // sx={{ display: "flex", alignItems: "center" }}
                     >
-                      <ImageList>
+                      {/* <ImageList>
                         <ImageListItem>
                           <img
                             src={`${row.img}?w=164&h=164&fit=crop&auto=format`}
@@ -525,7 +525,7 @@ export default function EnhancedTable() {
                             }}
                           />
                         </ImageListItem>
-                      </ImageList>
+                      </ImageList> */}
                       {row.name}
                     </TableCell>
                     <TableCell align="right">{row.calories}</TableCell>

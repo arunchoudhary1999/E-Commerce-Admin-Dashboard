@@ -66,14 +66,33 @@ const BarChartTwo = () => {
             alignItems: "center",
           }}
         >
-          <Typography variant="h6">
+          <Typography
+            sx={{
+              fontWeight: "800",
+              fontSize: "20px",
+              fontFamily: "Nunito",
+              color: "rgba(34, 34, 34, 0.5)",
+            }}
+          >
             Total Sales
             <br />
-            <Typography paragraph style={{ fontWeight: "800" }}>
+            <Typography
+              style={{
+                fontWeight: "800",
+                fontSize: "24px",
+                fontFamily: "Nunito",
+                color: "rgba(34, 34, 34, 1)",
+              }}
+            >
               <CurrencyRupeeIcon style={{ fontSize: "15px" }} />
               4000
               <span
-                style={{ color: "red", fontSize: "12px", fontWeight: "200" }}
+                style={{
+                  fontWeight: "700",
+                  fontSize: "12px",
+                  fontFamily: "Nunito",
+                  color: "rgba(248, 65, 65, 1)",
+                }}
               >
                 <ArrowDownwardIcon sx={{ fontSize: "12px" }} />
                 11.94%

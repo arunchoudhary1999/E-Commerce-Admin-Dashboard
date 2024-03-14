@@ -44,7 +44,7 @@ export default function UserManagement() {
     openchange(false);
   };
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", background: "#FAFAFB" }}>
       <SideBar />
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "55px" }}>
         <Box sx={{ marginTop: "1rem" }}>
@@ -94,6 +94,7 @@ export default function UserManagement() {
                         fontSize: "40px",
                         borderRadius: "10px",
                       }}
+                      onClick={closepopup}
                     />
                   </DialogTitle>
                 </Box>
@@ -146,8 +147,10 @@ export default function UserManagement() {
                                     justifyContent: "space-between",
                                   }}
                                 >
-                                  <Box>
-                                    <FormControl sx={{ mt: 1, mb: 1 }}>
+                                  <Box sx={{ width: "49.5%" }}>
+                                    <FormControl
+                                      sx={{ mt: 1, mb: 1, width: "100%" }}
+                                    >
                                       <InputLabel id="demo-select-small-label">
                                         <PlaceIcon />
                                         +00
@@ -158,10 +161,6 @@ export default function UserManagement() {
                                         value={time}
                                         label="State"
                                         onChange={handleChange}
-                                        sx={{
-                                          pr: 12,
-                                          pl: 12,
-                                        }}
                                       >
                                         <MenuItem value="">
                                           <em>None</em>
@@ -172,7 +171,7 @@ export default function UserManagement() {
                                       </Select>
                                     </FormControl>
                                   </Box>
-                                  <Box>
+                                  <Box sx={{ width: "49.5%" }}>
                                     <TextField
                                       id="outlined-basic"
                                       label="Mobile Number"
@@ -343,28 +342,41 @@ export default function UserManagement() {
                       </div>
                     </Box>
                   </DialogContentText>
-                </DialogContent>
-                <DialogActions
-                  sx={{ display: "flex", justifyContent: "center" }}
-                >
-                  <Button
-                    onClick={closepopup}
-                    sx={{ color: "orange", borderColor: "orange" }}
-                    variant="outlined"
-                  >
-                    Cancel
-                  </Button>
-                  <Button
-                    onClick={closepopup}
+                  <DialogActions
                     sx={{
-                      background: "orange",
-                      color: "white",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      width: "100%",
                     }}
-                    variant="contained"
                   >
-                    Add
-                  </Button>
-                </DialogActions>
+                    <Button
+                      onClick={closepopup}
+                      sx={{
+                        color: "orange",
+                        borderColor: "orange",
+                        width: "49%",
+                        pt: 1.5,
+                        pb: 1.5,
+                      }}
+                      variant="outlined"
+                    >
+                      Cancel
+                    </Button>
+                    <Button
+                      onClick={closepopup}
+                      sx={{
+                        background: "orange",
+                        color: "white",
+                        width: "49%",
+                        pt: 1.5,
+                        pb: 1.5,
+                      }}
+                      variant="contained"
+                    >
+                      Add
+                    </Button>
+                  </DialogActions>
+                </DialogContent>
               </Dialog>
             </Box>
 

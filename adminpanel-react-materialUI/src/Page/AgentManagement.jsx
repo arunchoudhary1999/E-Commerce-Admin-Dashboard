@@ -73,8 +73,9 @@ export default function AgentManagement() {
   const agent01closepopup = () => {
     agent01openchange(false);
   };
+
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", background: "#FAFAFB" }}>
       <SideBar />
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "55px" }}>
         <Box sx={{ marginTop: "1rem" }}>
@@ -118,6 +119,7 @@ export default function AgentManagement() {
                         fontSize: "40px",
                         borderRadius: "10px",
                       }}
+                      onClick={closeagentpopup}
                     />
                   </DialogTitle>
                 </Box>
@@ -151,7 +153,7 @@ export default function AgentManagement() {
                         marginBottom: "15px",
                       }}
                     >
-                      <div className="AgentManagement01">
+                      <div className="AgentManagementAgentDetails0102">
                         <Box>
                           <Box
                             sx={{
@@ -188,7 +190,7 @@ export default function AgentManagement() {
                               justifyContent: "space-between",
                             }}
                           >
-                            <div className="AgentManagement0101">
+                            <div className="AgentManagementAgentDetails0101">
                               <Box>
                                 <Box sx={{ mb: 1.5 }}>
                                   <label sx={{ mt: 1, mb: 1, width: "100%" }}>
@@ -292,21 +294,21 @@ export default function AgentManagement() {
                       </div>
                     </Box>
                   </DialogContentText>
-                </DialogContent>
-                <DialogActions
-                  sx={{ display: "flex", justifyContent: "center" }}
-                >
-                  <Button
-                    onClick={closepopup}
-                    sx={{
-                      background: "red",
-                      color: "white",
-                    }}
-                    variant="contained"
+                  <DialogActions
+                    sx={{ display: "flex", justifyContent: "center" }}
                   >
-                    Suspend Member
-                  </Button>
-                </DialogActions>
+                    <Button
+                      onClick={closepopup}
+                      sx={{
+                        background: "red",
+                        color: "white",
+                      }}
+                      variant="contained"
+                    >
+                      Suspend Member
+                    </Button>
+                  </DialogActions>
+                </DialogContent>
               </Dialog>
 
               <Box
@@ -346,6 +348,7 @@ export default function AgentManagement() {
                           fontSize: "40px",
                           borderRadius: "10px",
                         }}
+                        onClick={agent01closepopup}
                       />
                     </DialogTitle>
                   </Box>
@@ -711,6 +714,7 @@ export default function AgentManagement() {
                           fontSize: "40px",
                           borderRadius: "10px",
                         }}
+                        onClick={closepopup}
                       />
                     </DialogTitle>
                   </Box>
@@ -768,8 +772,10 @@ export default function AgentManagement() {
                                       justifyContent: "space-between",
                                     }}
                                   >
-                                    <Box>
-                                      <FormControl sx={{ mt: 1, mb: 1 }}>
+                                    <Box sx={{ width: "49.5%" }}>
+                                      <FormControl
+                                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                                      >
                                         <InputLabel id="demo-select-small-label">
                                           <PlaceIcon />
                                           +00
@@ -780,10 +786,6 @@ export default function AgentManagement() {
                                           value={time}
                                           label="State"
                                           onChange={handleChange}
-                                          sx={{
-                                            pr: 4,
-                                            pl: 4,
-                                          }}
                                         >
                                           <MenuItem value="">
                                             <em>None</em>
@@ -794,7 +796,7 @@ export default function AgentManagement() {
                                         </Select>
                                       </FormControl>
                                     </Box>
-                                    <Box>
+                                    <Box sx={{ width: "49.5%" }}>
                                       <TextField
                                         id="outlined-basic"
                                         label="Mobile Number"
@@ -895,28 +897,43 @@ export default function AgentManagement() {
                         </div>
                       </Box>
                     </DialogContentText>
-                  </DialogContent>
-                  <DialogActions
-                    sx={{ display: "flex", justifyContent: "center" }}
-                  >
-                    <Button
-                      onClick={closepopup}
-                      sx={{ color: "orange", borderColor: "orange" }}
-                      variant="outlined"
-                    >
-                      Cancel
-                    </Button>
-                    <Button
-                      onClick={closepopup}
+                    <DialogActions
                       sx={{
-                        background: "orange",
-                        color: "white",
+                        display: "flex",
+                        justifyContent: "center",
+                        width: "100%",
                       }}
-                      variant="contained"
                     >
-                      Add
-                    </Button>
-                  </DialogActions>
+                      <Button
+                        onClick={closepopup}
+                        sx={{
+                          color: "orange",
+                          borderColor: "orange",
+                          pt: 1.5,
+                          pb: 1.5,
+                          pl: 5,
+                          pr: 5,
+                        }}
+                        variant="outlined"
+                      >
+                        Cancel
+                      </Button>
+                      <Button
+                        onClick={closepopup}
+                        sx={{
+                          background: "orange",
+                          color: "white",
+                          pt: 1.5,
+                          pb: 1.5,
+                          pl: 5,
+                          pr: 5,
+                        }}
+                        variant="contained"
+                      >
+                        Add
+                      </Button>
+                    </DialogActions>
+                  </DialogContent>
                 </Dialog>
               </Box>
             </Box>

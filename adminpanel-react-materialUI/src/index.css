@@ -1,20 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  font-family: "Nunito", sans-serif;
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 
 .BarChartOne01 {
-  /* background-color: rgb(247, 242, 242); */
+  background-color: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -23,7 +24,8 @@ code {
 }
 
 .BarChartTwo01 {
-  /* background-color: rgb(247, 242, 242); */
+  background-color: white;
+
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -32,7 +34,8 @@ code {
 }
 
 .PieChartOne01 {
-  /* background-color: rgb(247, 242, 242); */
+  background-color: white;
+
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -51,6 +54,7 @@ code {
 }
 
 .OrderManagement01 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -68,6 +72,7 @@ code {
 }
 
 .OrderManagementModel {
+
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -76,6 +81,7 @@ code {
 }
 
 .AddProduct01 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -87,6 +93,7 @@ code {
 
 
 .AddProduct02 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -145,6 +152,7 @@ code {
 }
 
 .ProductManagementProductDetails00 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -153,6 +161,7 @@ code {
 }
 
 .ProductManagementProductDetails01 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -161,6 +170,7 @@ code {
 }
 
 .ProductManagementProductDetailsSecond00 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -171,26 +181,43 @@ code {
 .AgentManagement01 {
   box-sizing: border-box;
   border-radius: 15px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  padding: 15px;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+  /* padding: 15px; */
   width: 100%;
 }
 
 .AgentManagement0101 {
   box-sizing: border-box;
   border-radius: 15px;
-  padding: 15px;
+  /* padding: 15px; */
   width: 49%;
 }
 
-.AgentManagement0102 {
+.AgentManagementAgentDetails0101 {
   box-sizing: border-box;
   border-radius: 15px;
   padding: 15px;
   width: 49%;
 }
 
+.AgentManagementAgentDetails0102 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px;
+  width: 100%;
+}
+
+
+.AgentManagement0102 {
+  box-sizing: border-box;
+  border-radius: 15px;
+  /* padding: 15px; */
+  width: 49%;
+}
+
 .AgentManagementDetailsSecond00 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -206,29 +233,24 @@ code {
   margin-bottom: 20px;
 }
 
-.UserManagementModal0101 {
-  box-sizing: border-box;
-  border-radius: 15px;
-  padding: 15px;
-  width: 100%;
-}
 
 .UserManagementModal01 {
   box-sizing: border-box;
   border-radius: 15px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  padding: 15px;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+  /* padding: 15px; */
   width: 100%;
 }
 
 .UserManagementModal0101 {
   box-sizing: border-box;
   border-radius: 15px;
-  padding: 15px;
+  /* padding: 15px; */
   width: 100%;
 }
 
 .CustomerSummary00 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -237,6 +259,7 @@ code {
 }
 
 .CustomerSummary01 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -245,6 +268,7 @@ code {
 }
 
 .CustomerSummary02 {
+  background: white;
   box-sizing: border-box;
   border-radius: 15px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -252,4 +276,22 @@ code {
   margin-bottom: 20px;
   width: 49%;
 
+}
+
+#mySpan {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+#myDiv {
+  text-align: center;
+}
+
+.PaymentManagementModelcards {
+
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 15px 15px 0 15px;
+  margin-bottom: 20px;
 }

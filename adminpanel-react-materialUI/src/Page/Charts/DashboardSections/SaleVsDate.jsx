@@ -32,7 +32,13 @@ const SaleVsDate = () => {
     chartInstance.current = new Chart(myChartRef, {
       type: "bar",
       data: {
-        labels: ["label 1", "label 2", "label 3", "label 4", "label 5"],
+        labels: [
+          "10-03-2023",
+          "24-03-2023",
+          "17-04-2023",
+          "24-04-2023",
+          "29-04-2023",
+        ],
         datasets: [
           {
             label: "Data",
@@ -61,7 +67,13 @@ const SaleVsDate = () => {
     secondChartInstance.current = new Chart(mySecondChartRef, {
       type: "bar",
       data: {
-        labels: ["label 1", "label 2", "label 3", "label 4", "label 5"],
+        labels: [
+          "10-03-2023",
+          "24-03-2023",
+          "17-04-2023",
+          "24-04-2023",
+          "29-04-2023",
+        ],
         datasets: [
           {
             label: "Data",
@@ -92,7 +104,16 @@ const SaleVsDate = () => {
             }}
           >
             <Box>
-              <Typography variant="h5">Sales Vs Date</Typography>
+              <Typography
+                sx={{
+                  fontWeight: "800",
+                  fontSize: "24px",
+                  fontFamily: "Nunito",
+                  color: "rgba(34, 34, 34, 1)",
+                }}
+              >
+                Sales Vs Date
+              </Typography>
             </Box>
             <Button
               sx={{ mt: 1.3, mb: 1.3, minWidth: 250, background: "orange" }}
@@ -105,6 +126,8 @@ const SaleVsDate = () => {
 
           <div
             style={{
+              background: "white",
+              padding: "15px",
               boxShadow:
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
             }}
@@ -150,7 +173,16 @@ const SaleVsDate = () => {
             }}
           >
             <Box>
-              <Typography variant="h5">Customers Vs Date</Typography>
+              <Typography
+                sx={{
+                  fontWeight: "800",
+                  fontSize: "24px",
+                  fontFamily: "Nunito",
+                  color: "rgba(34, 34, 34, 1)",
+                }}
+              >
+                Customers Vs Date
+              </Typography>
             </Box>
             <Button
               sx={{ mt: 1.3, mb: 1.3, minWidth: 250, background: "orange" }}
@@ -163,6 +195,8 @@ const SaleVsDate = () => {
 
           <div
             style={{
+              background: "white",
+              padding: "15px",
               boxShadow:
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
             }}
@@ -195,6 +229,7 @@ const SaleVsDate = () => {
                 </Select>
               </FormControl>
             </Box>
+
             <canvas ref={chartRef} />
           </div>
         </Box>

@@ -24,7 +24,7 @@ export default function Dashboard() {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", background: "#FAFAFB" }}>
       <SideBar />
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "55px" }}>
         <Box
@@ -34,7 +34,11 @@ export default function Dashboard() {
             alignItems: "center",
           }}
         >
-          <Typography variant="h5">Welcome back, Admin</Typography>
+          <Typography
+            sx={{ fontWeight: "700", fontSize: "16px", fontFamily: "Nunito" }}
+          >
+            Welcome back, Admin
+          </Typography>
           <FormControl sx={{ m: 1, minWidth: 250 }} size="small">
             <InputLabel id="demo-select-small-label">Today</InputLabel>
             <Select

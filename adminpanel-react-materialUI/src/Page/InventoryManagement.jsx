@@ -11,7 +11,7 @@ import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
-import EditProductDetailsTable from "../Page/ProductManagementSection/EditProductDetailsTable";
+import InventoryManagementTable from "../Page/InventroyManagementSection/InventoryManagementTable";
 export default function InventoryManagement() {
   const navigate = useNavigate();
   const [time, setTime] = React.useState("");
@@ -19,7 +19,7 @@ export default function InventoryManagement() {
     setTime(event.target.value);
   };
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", background: "#FAFAFB" }}>
       <SideBar />
       <Box component="main" sx={{ flexGrow: 1, p: 3, marginTop: "55px" }}>
         <Box sx={{ marginTop: "1rem" }}>
@@ -244,7 +244,7 @@ export default function InventoryManagement() {
                 </div>
               </Box>
               <Box>
-                <EditProductDetailsTable />
+                <InventoryManagementTable />
               </Box>
             </Box>
           </Box>

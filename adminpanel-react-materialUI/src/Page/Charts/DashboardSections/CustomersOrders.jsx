@@ -85,7 +85,13 @@ const CustomersOrders = () => {
     chartInstance.current = new Chart(myChartRef, {
       type: "bar",
       data: {
-        labels: ["label 1", "label 2", "label 3", "label 4", "label 5"],
+        labels: [
+          "10-03-2023",
+          "24-03-2023",
+          "17-04-2023",
+          "24-04-2023",
+          "29-04-2023",
+        ],
         datasets: [
           {
             label: "Data",
@@ -115,7 +121,16 @@ const CustomersOrders = () => {
           }}
         >
           <Box>
-            <Typography variant="h5">Top Customers by Orders</Typography>
+            <Typography
+              sx={{
+                fontWeight: "800",
+                fontSize: "24px",
+                fontFamily: "Nunito",
+                color: "rgba(34, 34, 34, 1)",
+              }}
+            >
+              Top Customers by Orders
+            </Typography>
           </Box>
           <FormControl sx={{ m: 1, minWidth: 250 }} size="small">
             <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -215,7 +230,16 @@ const CustomersOrders = () => {
           }}
         >
           <Box>
-            <Typography variant="h5">Orders Vs Date</Typography>
+            <Typography
+              sx={{
+                fontWeight: "800",
+                fontSize: "24px",
+                fontFamily: "Nunito",
+                color: "rgba(34, 34, 34, 1)",
+              }}
+            >
+              Orders Vs Date
+            </Typography>
           </Box>
           <Button
             sx={{ mt: 1.3, mb: 1.3, minWidth: 250, background: "orange" }}
@@ -228,6 +252,8 @@ const CustomersOrders = () => {
 
         <div
           style={{
+            background: "white",
+            padding: "15px",
             boxShadow:
               "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
           }}
