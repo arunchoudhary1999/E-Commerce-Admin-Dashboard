@@ -6,222 +6,153 @@ import Typography from "@mui/material/Typography";
 import Slider from "@mui/material/Slider";
 import MuiInput from "@mui/material/Input";
 
+import LinearProgress, {
+  linearProgressClasses,
+} from "@mui/material/LinearProgress";
 const Input = styled(MuiInput)`
   width: 42px;
 `;
 
 export default function Ranges() {
-  const [value, setValue] = React.useState(75);
-  const [valueOne, setValueOne] = React.useState(50);
-  const [valueTwo, setValueTwo] = React.useState(60);
-  const [valueThree, setValueThree] = React.useState(25);
+  const [data01, setData01] = React.useState(21799);
+  const [data02, setData02] = React.useState(5799);
+  const [data03, setData03] = React.useState(18799);
+  const [data04, setData04] = React.useState(5799);
 
   const handleSliderChange = (event) => {
-    setValue(Number);
+    // setValue(Number);
+    setData01(event.target.value);
   };
 
   const handleSliderChangeOne = (event) => {
-    setValueOne(Number);
+    // setValueOne(Number);
+    setData02(event.target.value);
   };
 
   const handleSliderChangeTwo = (event) => {
-    setValueOne(Number);
+    // setValueOne(Number);
+    setData03(event.target.value);
   };
 
   const handleSliderChangeThree = (event) => {
-    setValueOne(Number);
+    // setValueOne(Number);
+    setData04(event.target.value);
   };
 
-  const handleInputChange = (event) => {
-    setValue(event.target.value === "" ? 0 : Number(event.target.value));
-  };
+  const BorderLinearProgress01 = styled(LinearProgress)(({ theme }) => ({
+    height: 18,
+    borderRadius: 15,
+    [`&.${linearProgressClasses.colorPrimary}`]: {
+      backgroundColor:
+        theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
+    },
+    [`& .${linearProgressClasses.bar}`]: {
+      borderRadius: 15,
+      backgroundColor: theme.palette.mode === "light" ? "orange" : "#308fe8",
+    },
+  }));
 
-  const handleInputChangeOne = (event) => {
-    setValueOne(event.target.value === "" ? 0 : Number(event.target.value));
-  };
+  const BorderLinearProgress02 = styled(LinearProgress)(({ theme }) => ({
+    height: 18,
+    borderRadius: 15,
+    [`&.${linearProgressClasses.colorPrimary}`]: {
+      backgroundColor:
+        theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
+    },
+    [`& .${linearProgressClasses.bar}`]: {
+      borderRadius: 15,
+      backgroundColor: theme.palette.mode === "light" ? "#ff0066" : "#308fe8",
+    },
+  }));
 
-  const handleInputChangeTwo = (event) => {
-    setValue(event.target.value === "" ? 0 : Number(event.target.value));
-  };
+  const BorderLinearProgress03 = styled(LinearProgress)(({ theme }) => ({
+    height: 18,
+    borderRadius: 15,
+    [`&.${linearProgressClasses.colorPrimary}`]: {
+      backgroundColor:
+        theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
+    },
+    [`& .${linearProgressClasses.bar}`]: {
+      borderRadius: 15,
+      backgroundColor: theme.palette.mode === "light" ? "orange" : "#308fe8",
+    },
+  }));
 
-  const handleInputChangeThree = (event) => {
-    setValue(event.target.value === "" ? 0 : Number(event.target.value));
-  };
-
-  const handleBlur = () => {
-    if (value < 0) {
-      setValue(0);
-    } else if (value > 100) {
-      setValue(100);
-    }
-  };
-
-  const handleBlurOne = () => {
-    if (valueOne < 0) {
-      setValueOne(0);
-    } else if (valueOne > 100) {
-      setValueOne(100);
-    }
-  };
-
-  const handleBlurTwo = () => {
-    if (valueTwo < 0) {
-      setValueTwo(0);
-    } else if (valueTwo > 100) {
-      setValueTwo(100);
-    }
-  };
-
-  const handleBlurThree = () => {
-    if (valueThree < 0) {
-      setValueThree(0);
-    } else if (valueThree > 100) {
-      setValueThree(100);
-    }
-  };
+  const BorderLinearProgress04 = styled(LinearProgress)(({ theme }) => ({
+    height: 18,
+    borderRadius: 15,
+    [`&.${linearProgressClasses.colorPrimary}`]: {
+      backgroundColor:
+        theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
+    },
+    [`& .${linearProgressClasses.bar}`]: {
+      borderRadius: 15,
+      backgroundColor: theme.palette.mode === "light" ? "#ff0066" : "#308fe8",
+    },
+  }));
 
   return (
     <>
       <Box>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between", mt: 2 }}>
           <Typography id="input-slider" gutterBottom>
             All Customers
           </Typography>
-          <Grid item>
-            <Input
-              value={value}
-              size="small"
-              onChange={handleInputChange}
-              onBlur={handleBlur}
-              inputProps={{
-                step: 10,
-                min: 0,
-                max: 100,
-                type: "number",
-                "aria-labelledby": "input-slider",
-              }}
-            />
-          </Grid>
+          <Typography sx={{ color: "orange" }} id="input-slider" gutterBottom>
+            {data01}
+          </Typography>
         </Box>
         <Grid container spacing={2} alignItems="center">
-          {/* <Grid item>
-          <VolumeUp />
-        </Grid> */}
           <Grid item xs>
-            <Slider
-              style={{ color: "orange", height: "15px" }}
-              value={typeof value === "number" ? value : 0}
-              onChange={handleSliderChange}
-              aria-labelledby="input-slider"
-            />
+            <BorderLinearProgress01 variant="determinate" value={90} />
           </Grid>
         </Grid>
       </Box>
 
       <Box>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between", mt: 2 }}>
           <Typography id="input-slider" gutterBottom>
             New Customers (Signed In)
           </Typography>
-          <Grid item>
-            <Input
-              value={valueOne}
-              size="small"
-              onChange={handleInputChangeOne}
-              onBlur={handleBlurOne}
-              inputProps={{
-                step: 10,
-                min: 0,
-                max: 100,
-                type: "number",
-                "aria-labelledby": "input-slider",
-              }}
-            />
-          </Grid>
+          <Typography sx={{ color: " #ff0066" }} id="input-slider" gutterBottom>
+            {data02}
+          </Typography>
         </Box>
         <Grid container spacing={2} alignItems="center">
-          {/* <Grid item>
-          <VolumeUp />
-        </Grid> */}
           <Grid item xs>
-            <Slider
-              style={{ color: "#ff0066", height: "15px" }}
-              value={typeof valueOne === "number" ? valueOne : 0}
-              onChange={handleSliderChangeOne}
-              aria-labelledby="input-slider"
-            />
+            <BorderLinearProgress02 variant="determinate" value={26} />
           </Grid>
         </Grid>
       </Box>
 
       <Box>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between", mt: 2 }}>
           <Typography id="input-slider" gutterBottom>
             All Customers
           </Typography>
-          <Grid item>
-            <Input
-              value={valueTwo}
-              size="small"
-              onChange={handleInputChangeTwo}
-              onBlur={handleBlurTwo}
-              inputProps={{
-                step: 10,
-                min: 0,
-                max: 100,
-                type: "number",
-                "aria-labelledby": "input-slider",
-              }}
-            />
-          </Grid>
+          <Typography sx={{ color: "orange" }} id="input-slider" gutterBottom>
+            {data03}
+          </Typography>
         </Box>
         <Grid container spacing={2} alignItems="center">
-          {/* <Grid item>
-          <VolumeUp />
-        </Grid> */}
           <Grid item xs>
-            <Slider
-              style={{ color: "orange", height: "15px" }}
-              value={typeof valueTwo === "number" ? valueTwo : 0}
-              onChange={handleSliderChangeTwo}
-              aria-labelledby="input-slider"
-            />
+            <BorderLinearProgress03 variant="determinate" value={78} />
           </Grid>
         </Grid>
       </Box>
 
-      <Box>
-        <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+      <Box sx={{ mb: 1.5 }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between", mt: 2 }}>
           <Typography id="input-slider" gutterBottom>
             New Customers (Signed In)
           </Typography>
-          <Grid item>
-            <Input
-              value={valueThree}
-              size="small"
-              onChange={handleInputChangeThree}
-              onBlur={handleBlurThree}
-              inputProps={{
-                step: 10,
-                min: 0,
-                max: 100,
-                type: "number",
-                "aria-labelledby": "input-slider",
-              }}
-            />
-          </Grid>
+          <Typography sx={{ color: " #ff0066" }} id="input-slider" gutterBottom>
+            {data04}
+          </Typography>
         </Box>
         <Grid container spacing={2} alignItems="center">
-          {/* <Grid item>
-          <VolumeUp />
-        </Grid> */}
           <Grid item xs>
-            <Slider
-              style={{ color: "#ff0066", height: "15px" }}
-              value={typeof valueThree === "number" ? valueThree : 0}
-              onChange={handleSliderChangeThree}
-              aria-labelledby="input-slider"
-            />
+            <BorderLinearProgress04 variant="determinate" value={25} />
           </Grid>
         </Grid>
       </Box>

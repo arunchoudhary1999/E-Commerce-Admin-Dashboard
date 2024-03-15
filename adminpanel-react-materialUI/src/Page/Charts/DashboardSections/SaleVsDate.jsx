@@ -31,6 +31,30 @@ const SaleVsDate = () => {
     const barColors = ["orange", "orange", "orange", "orange", "orange"];
     chartInstance.current = new Chart(myChartRef, {
       type: "bar",
+      options: {
+        scales: {
+          y: {
+            title: {
+              display: true,
+              text: "No. of Customers Regitered",
+              color: "#222222",
+              font: {
+                size: 16,
+              },
+            },
+          },
+          x: {
+            title: {
+              display: true,
+              text: "Date",
+              color: "#222222",
+              font: {
+                size: 16,
+              },
+            },
+          },
+        },
+      },
       data: {
         labels: [
           "10-03-2023",
@@ -66,6 +90,40 @@ const SaleVsDate = () => {
     const barColors = ["orange", "orange", "orange", "orange", "orange"];
     secondChartInstance.current = new Chart(mySecondChartRef, {
       type: "bar",
+      options: {
+        scales: {
+          y: {
+            title: {
+              display: true,
+              text: "Sale in Rupees",
+              color: "#222222",
+              font: {
+                size: 16,
+              },
+            },
+          },
+          x: {
+            title: {
+              display: true,
+              text: "Date",
+              color: "#222222",
+              font: {
+                size: 16,
+              },
+            },
+          },
+        },
+      },
+      scales: {
+        yAxes: [
+          {
+            scaleLabel: {
+              display: true,
+              labelString: "probability",
+            },
+          },
+        ],
+      },
       data: {
         labels: [
           "10-03-2023",

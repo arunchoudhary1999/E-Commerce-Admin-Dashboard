@@ -34,7 +34,7 @@ const TableChartFive = () => {
 
   return (
     <>
-      <div className="PieChartOne01">
+      <div className="TableChartOne01">
         <Box
           sx={{
             display: "flex",

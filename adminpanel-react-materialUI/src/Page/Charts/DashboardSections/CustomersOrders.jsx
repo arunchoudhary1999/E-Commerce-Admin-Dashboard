@@ -84,6 +84,30 @@ const CustomersOrders = () => {
     const barColors = ["orange", "orange", "orange", "orange", "orange"];
     chartInstance.current = new Chart(myChartRef, {
       type: "bar",
+      options: {
+        scales: {
+          y: {
+            title: {
+              display: true,
+              text: "No. of Orders",
+              color: "#222222",
+              font: {
+                size: 16,
+              },
+            },
+          },
+          x: {
+            title: {
+              display: true,
+              text: "Date",
+              color: "#222222",
+              font: {
+                size: 16,
+              },
+            },
+          },
+        },
+      },
       data: {
         labels: [
           "10-03-2023",

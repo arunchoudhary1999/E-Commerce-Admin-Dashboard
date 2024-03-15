@@ -18,7 +18,7 @@ const RangeChartFour = () => {
 
   return (
     <>
-      <div className="PieChartOne01">
+      <div className="RangeChartOne01">
         <Box
           sx={{
             display: "flex",
