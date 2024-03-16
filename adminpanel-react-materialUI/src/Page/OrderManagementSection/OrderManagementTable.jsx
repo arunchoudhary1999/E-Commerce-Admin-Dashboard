@@ -19,6 +19,7 @@ import Tooltip from "@mui/material/Tooltip";
 import DeleteIcon from "@mui/icons-material/Delete";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 import Divider from "@mui/material/Divider";
 import InputBase from "@mui/material/InputBase";
@@ -26,7 +27,17 @@ import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
-function createData(id, name, calories, fat, carbs, protein) {
+function createData(
+  id,
+  name,
+  calories,
+  fat,
+  carbs,
+  protein,
+  suger,
+  vitamin,
+  calcium
+) {
   return {
     id,
     name,
@@ -34,23 +45,156 @@ function createData(id, name, calories, fat, carbs, protein) {
     fat,
     carbs,
     protein,
+    suger,
+    vitamin,
+    calcium,
   };
 }
 
 const rows = [
-  createData(1, "Cupcake", 305, 3.7, 67, 4.3),
-  createData(2, "Donut", 452, 25.0, 51, 4.9),
-  createData(3, "Eclair", 262, 16.0, 24, 6.0),
-  createData(4, "Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData(5, "Gingerbread", 356, 16.0, 49, 3.9),
-  createData(6, "Honeycomb", 408, 3.2, 87, 6.5),
-  createData(7, "Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData(8, "Jelly Bean", 375, 0.0, 94, 0.0),
-  createData(9, "KitKat", 518, 26.0, 65, 7.0),
-  createData(10, "Lollipop", 392, 0.2, 98, 0.0),
-  createData(11, "Marshmallow", 318, 0, 81, 2.0),
-  createData(12, "Nougat", 360, 19.0, 9, 37.0),
-  createData(13, "Oreo", 437, 18.0, 63, 4.0),
+  createData(
+    1,
+    "Cupcake",
+    305,
+    3.7,
+    67,
+    4.3,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    2,
+    "Donut",
+    452,
+    25.0,
+    51,
+    4.9,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    3,
+    "Eclair",
+    262,
+    16.0,
+    24,
+    6.0,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    4,
+    "Frozen yoghurt",
+    159,
+    6.0,
+    24,
+    4.0,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    5,
+    "Gingerbread",
+    356,
+    16.0,
+    49,
+    3.9,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    6,
+    "Honeycomb",
+    408,
+    3.2,
+    87,
+    6.5,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    7,
+    "Ice cream sandwich",
+    237,
+    9.0,
+    37,
+    4.3,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    8,
+    "Jelly Bean",
+    375,
+    0.0,
+    94,
+    0.0,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    9,
+    "KitKat",
+    518,
+    26.0,
+    65,
+    7.0,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    10,
+    "Lollipop",
+    392,
+    0.2,
+    98,
+    0.0,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    11,
+    "Marshmallow",
+    318,
+    0,
+    81,
+    2.0,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    12,
+    "Nougat",
+    360,
+    19.0,
+    9,
+    37.0,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
+  createData(
+    13,
+    "Oreo",
+    437,
+    18.0,
+    63,
+    4.0,
+    "Mastercard",
+    "Delivered",
+    "Delivered"
+  ),
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -115,6 +259,24 @@ const headCells = [
     numeric: true,
     disablePadding: false,
     label: "Protein (g)",
+  },
+  {
+    id: "suger",
+    numeric: true,
+    disablePadding: false,
+    label: "Suger (g)",
+  },
+  {
+    id: "vitamin",
+    numeric: true,
+    disablePadding: false,
+    label: "Vitamin (g)",
+  },
+  {
+    id: "calcium",
+    numeric: true,
+    disablePadding: false,
+    label: "Calcium (g)",
   },
 ];
 
@@ -402,6 +564,60 @@ export default function EnhancedTable() {
                     <TableCell align="right">{row.fat}</TableCell>
                     <TableCell align="right">{row.carbs}</TableCell>
                     <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">
+                      <span
+                        style={{
+                          background: "rgba(50, 147, 111, 0.16)",
+                          padding: "4px 11px 4px 11px",
+                          borderRadius: "8px",
+                          color: "rgba(81, 156, 102, 1)",
+                          fontFamily: "Inter",
+                          // fontSize: "11.9px",
+                        }}
+                      >
+                        {row.suger}
+                      </span>
+                    </TableCell>
+                    <TableCell align="right">
+                      <span
+                        style={{
+                          background: "rgba(94, 99, 102, 0.08)",
+
+                          padding: "2.97px 8.18px 2.97px 8.18px",
+                          color: "rgba(139, 141, 151, 1)",
+
+                          borderRadius: "5.95px",
+
+                          fontFamily: "Inter",
+                          // fontSize: "11.9px",
+                        }}
+                      >
+                        <span
+                          style={{
+                            display: "inline-flex",
+                            justifyContent: "space-evenly",
+                            alignItems: "center",
+                          }}
+                        >
+                          {row.vitamin}
+                          <KeyboardArrowDownIcon />
+                        </span>
+                      </span>
+                    </TableCell>
+                    <TableCell align="right">
+                      <span
+                        style={{
+                          background: "rgba(50, 147, 111, 0.16)",
+                          padding: "4px 11px 4px 11px",
+                          borderRadius: "8px",
+                          color: "rgba(81, 156, 102, 1)",
+                          fontFamily: "Inter",
+                          // fontSize: "11.9px",
+                        }}
+                      >
+                        {row.calcium}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 );
               })}

@@ -22,7 +22,10 @@ export default function ProductManagement() {
               alignItems: "center",
             }}
           >
-            <Button sx={{ background: "orange" }} variant="contained">
+            <Button
+              sx={{ background: "#F58634", borderRadius: "8px" }}
+              variant="contained"
+            >
               <ListItem
                 disablePadding
                 sx={{ display: "block" }}
@@ -34,7 +37,10 @@ export default function ProductManagement() {
               </ListItem>
             </Button>
 
-            <Button sx={{ background: "orange" }} variant="contained">
+            <Button
+              sx={{ background: "#F58634", borderRadius: "8px" }}
+              variant="contained"
+            >
               <AddIcon />
               <ListItem
                 disablePadding

@@ -81,7 +81,7 @@ const CustomersOrders = () => {
     }
     const myChartRef = chartRef.current.getContext("2d");
 
-    const barColors = ["orange", "orange", "orange", "orange", "orange"];
+    const barColors = ["#F58634", "#F58634", "#F58634", "#F58634", "#F58634"];
     chartInstance.current = new Chart(myChartRef, {
       type: "bar",
       options: {
@@ -175,13 +175,12 @@ const CustomersOrders = () => {
           </FormControl>
         </Box>
 
-        <Paper
+        <Box
           sx={{
             width: "100%",
             overflow: "hidden",
-            boxShadow:
-              "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
           }}
+          className="boxShadow"
         >
           <TableContainer>
             <Table stickyHeader aria-label="sticky table">
@@ -193,7 +192,7 @@ const CustomersOrders = () => {
                       align={column.align}
                       style={{
                         minWidth: column.minWidth,
-                        background: "orange",
+                        background: "#F58634",
                         color: "white",
                       }}
                     >
@@ -242,7 +241,7 @@ const CustomersOrders = () => {
             onPageChange={handleChangePage}
             onRowsPerPageChange={handleChangeRowsPerPage}
           />
-        </Paper>
+        </Box>
       </Box>
 
       <Box sx={{ marginTop: "3rem", width: "48.5%" }}>
@@ -266,7 +265,13 @@ const CustomersOrders = () => {
             </Typography>
           </Box>
           <Button
-            sx={{ mt: 1.3, mb: 1.3, minWidth: 250, background: "orange" }}
+            sx={{
+              mt: 1.3,
+              mb: 1.3,
+              minWidth: 250,
+              background: "#F58634",
+              borderRadius: "8px",
+            }}
             variant="contained"
           >
             <DownloadIcon />
@@ -278,9 +283,8 @@ const CustomersOrders = () => {
           style={{
             background: "white",
             padding: "15px",
-            boxShadow:
-              "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
           }}
+          className="boxShadow"
         >
           <Box
             sx={{

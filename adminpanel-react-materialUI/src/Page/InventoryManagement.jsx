@@ -31,11 +31,17 @@ export default function InventoryManagement() {
                 alignItems: "center",
               }}
             >
-              <Button sx={{ background: "orange" }} variant="contained">
+              <Button
+                sx={{ background: "#F58634", borderRadius: "8px" }}
+                variant="contained"
+              >
                 Inventory Management
               </Button>
 
-              <Button sx={{ background: "orange" }} variant="contained">
+              <Button
+                sx={{ background: "#F58634", borderRadius: "8px" }}
+                variant="contained"
+              >
                 <AddIcon sx={{ mr: 1 }} />
                 Add New Product
               </Button>
@@ -68,7 +74,7 @@ export default function InventoryManagement() {
                   >
                     <SourceIcon
                       sx={{
-                        color: "orange",
+                        color: "#F58634",
                         background: "#ffffcc",
                         p: 1,
                         fontSize: "40px",
@@ -162,7 +168,7 @@ export default function InventoryManagement() {
                   >
                     <PeopleOutlineIcon
                       sx={{
-                        color: "orange",
+                        color: "#F58634",
                         background: "#ffffcc",
                         p: 1,
                         fontSize: "40px",

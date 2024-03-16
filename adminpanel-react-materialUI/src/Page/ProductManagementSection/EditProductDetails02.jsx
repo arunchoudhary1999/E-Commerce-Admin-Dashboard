@@ -84,12 +84,18 @@ export default function EditProductDetails() {
             <Typography variant="h5">Edit Product Details</Typography>
 
             <Box>
-              <Button sx={{ background: "black", mr: 2 }} variant="contained">
+              <Button
+                sx={{ background: "black", mr: 2, borderRadius: "8px" }}
+                variant="contained"
+              >
                 Save as Draft
                 <KeyboardArrowDownIcon sx={{ ml: 1 }} />
               </Button>
 
-              <Button sx={{ background: "orange" }} variant="contained">
+              <Button
+                sx={{ background: "#F58634", borderRadius: "8px" }}
+                variant="contained"
+              >
                 <ListItem disablePadding>Save & Publish</ListItem>
               </Button>
             </Box>
@@ -821,6 +827,7 @@ export default function EditProductDetails() {
                             textTransform: "lowercase",
                             mb: 1,
                             fontSize: "9px",
+                            borderRadius: "8px",
                           }}
                         >
                           Upload Image

@@ -162,6 +162,7 @@ export default function SideBar() {
                   alignItems: "center",
                   width: 400,
                   border: "1px solid grey",
+                  borderRadius: "8px",
                 }}
               >
                 <InputBase
@@ -184,7 +185,12 @@ export default function SideBar() {
                 role={undefined}
                 variant="contained"
                 tabIndex={-1}
-                sx={{ background: "orange", p: "10px 15px", mr: 1.5 }}
+                sx={{
+                  background: "#F58634",
+                  p: "10px 15px",
+                  mr: 1.5,
+                  borderRadius: "8px",
+                }}
                 startIcon={<StorefrontIcon />}
               >
                 Visit My Store
@@ -218,9 +224,9 @@ export default function SideBar() {
       <Drawer
         variant="permanent"
         open={open}
-        sx={{ background: "orange", color: "white" }}
+        sx={{ background: "#F58634", color: "white" }}
       >
-        <DrawerHeader sx={{ background: "orange" }}>
+        <DrawerHeader sx={{ background: "#F58634" }}>
           <IconButton onClick={handleDrawerClose} sx={{ color: "white" }}>
             {theme.direction === "rtl" ? (
               <ChevronRightIcon />
@@ -230,7 +236,7 @@ export default function SideBar() {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List sx={{ background: "orange", color: "white", height: "100vh" }}>
+        <List sx={{ background: "#F58634", color: "white", height: "100vh" }}>
           <ListItem
             disablePadding
             sx={{ display: "block" }}

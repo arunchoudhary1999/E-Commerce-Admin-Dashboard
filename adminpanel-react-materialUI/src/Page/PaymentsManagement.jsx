@@ -51,7 +51,7 @@ export default function PaymentsManagement() {
             <Box>
               <Button
                 onClick={functionopenpopup}
-                sx={{ background: "orange" }}
+                sx={{ background: "#F58634", borderRadius: "8px" }}
                 variant="contained"
               >
                 Payment Summary
@@ -168,6 +168,7 @@ export default function PaymentsManagement() {
                               background: "#ffeb99",
                               padding: "0 8px",
                               textTransform: "lowercase",
+                              borderRadius: "8px",
                             }}
                           >
                             Pending
@@ -488,6 +489,7 @@ export default function PaymentsManagement() {
                       background: "white",
                       borderColor: "red",
                       color: "red",
+                      borderRadius: "8px",
                     }}
                     variant="outlined"
                   >
@@ -499,6 +501,7 @@ export default function PaymentsManagement() {
                       background: "white",
                       borderColor: "red",
                       color: "red",
+                      borderRadius: "8px",
                     }}
                     variant="outlined"
                   >
@@ -508,6 +511,9 @@ export default function PaymentsManagement() {
                     onClick={closepopup}
                     color="error"
                     variant="contained"
+                    sx={{
+                      borderRadius: "8px",
+                    }}
                   >
                     Close Order
                   </Button>
@@ -542,7 +548,7 @@ export default function PaymentsManagement() {
                   >
                     <ShoppingBagIcon
                       sx={{
-                        color: "orange",
+                        color: "#F58634",
                         background: "#ffffcc",
                         p: 1,
                         fontSize: "40px",
@@ -641,7 +647,7 @@ export default function PaymentsManagement() {
                   >
                     <ShoppingBagIcon
                       sx={{
-                        color: "orange",
+                        color: "#F58634",
                         background: "#ffffcc",
                         p: 1,
                         fontSize: "40px",

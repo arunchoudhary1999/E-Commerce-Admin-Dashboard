@@ -65,6 +65,7 @@ export default function CustomerSummary() {
                     borderColor: "#b30000",
                     mr: 2,
                     fontSize: "13px",
+                    borderRadius: "8px",
                   }}
                   variant="outlined"
                 >
@@ -77,6 +78,7 @@ export default function CustomerSummary() {
                     borderColor: "#b30000",
                     mr: 2,
                     fontSize: "13px",
+                    borderRadius: "8px",
                   }}
                   variant="outlined"
                 >
@@ -84,7 +86,12 @@ export default function CustomerSummary() {
                 </Button>
 
                 <Button
-                  sx={{ background: "orange", mr: 2, fontSize: "13px" }}
+                  sx={{
+                    background: "#F58634",
+                    mr: 2,
+                    fontSize: "13px",
+                    borderRadius: "8px",
+                  }}
                   variant="contained"
                 >
                   <ListItem disablePadding onClick={() => {}}>
@@ -94,7 +101,11 @@ export default function CustomerSummary() {
                 </Button>
 
                 <Button
-                  sx={{ background: "#b30000", fontSize: "13px" }}
+                  sx={{
+                    background: "#b30000",
+                    fontSize: "13px",
+                    borderRadius: "8px",
+                  }}
                   variant="contained"
                 >
                   Suspend Customer
@@ -130,7 +141,7 @@ export default function CustomerSummary() {
                     >
                       <PersonIcon
                         sx={{
-                          color: "orange",
+                          color: "#F58634",
                           background: "#ffeb99",
                           p: 1,
                           fontSize: "40px",
@@ -159,6 +170,7 @@ export default function CustomerSummary() {
                           background: "lightGreen",
                           padding: "0 8px",
                           textTransform: "lowercase",
+                          borderRadius: "8px",
                         }}
                       >
                         Active
@@ -214,7 +226,7 @@ export default function CustomerSummary() {
                     >
                       <PlaceIcon
                         sx={{
-                          color: "orange",
+                          color: "#F58634",
                           background: "#ffeb99",
                           p: 1,
                           fontSize: "40px",
@@ -261,7 +273,7 @@ export default function CustomerSummary() {
                     >
                       <ScheduleIcon
                         sx={{
-                          color: "orange",
+                          color: "#F58634",
                           background: "#ffeb99",
                           p: 1,
                           fontSize: "40px",
@@ -329,7 +341,7 @@ export default function CustomerSummary() {
                     >
                       <ShoppingCartIcon
                         sx={{
-                          color: "orange",
+                          color: "#F58634",
                           background: "#ffeb99",
                           p: 1,
                           fontSize: "40px",
@@ -384,7 +396,7 @@ export default function CustomerSummary() {
                     >
                       <ShoppingBagIcon
                         sx={{
-                          color: "orange",
+                          color: "#F58634",
                           background: "#ffeb99",
                           p: 1,
                           fontSize: "40px",
@@ -474,7 +486,7 @@ export default function CustomerSummary() {
                     >
                       <ShoppingBagIcon
                         sx={{
-                          color: "orange",
+                          color: "#F58634",
                           background: "#ffeb99",
                           p: 1,
                           fontSize: "40px",

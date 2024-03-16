@@ -28,7 +28,7 @@ const SaleVsDate = () => {
     }
     const myChartRef = chartRef.current.getContext("2d");
 
-    const barColors = ["orange", "orange", "orange", "orange", "orange"];
+    const barColors = ["#F58634", "#F58634", "#F58634", "#F58634", "#F58634"];
     chartInstance.current = new Chart(myChartRef, {
       type: "bar",
       options: {
@@ -87,7 +87,7 @@ const SaleVsDate = () => {
     }
     const mySecondChartRef = secondChartRef.current.getContext("2d");
 
-    const barColors = ["orange", "orange", "orange", "orange", "orange"];
+    const barColors = ["#F58634", "#F58634", "#F58634", "#F58634", "#F58634"];
     secondChartInstance.current = new Chart(mySecondChartRef, {
       type: "bar",
       options: {
@@ -174,7 +174,13 @@ const SaleVsDate = () => {
               </Typography>
             </Box>
             <Button
-              sx={{ mt: 1.3, mb: 1.3, minWidth: 250, background: "orange" }}
+              sx={{
+                mt: 1.3,
+                mb: 1.3,
+                minWidth: 250,
+                background: "#F58634",
+                borderRadius: "8px",
+              }}
               variant="contained"
             >
               <DownloadIcon />
@@ -186,9 +192,8 @@ const SaleVsDate = () => {
             style={{
               background: "white",
               padding: "15px",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
             }}
+            className="boxShadow"
           >
             <Box
               sx={{
@@ -243,7 +248,13 @@ const SaleVsDate = () => {
               </Typography>
             </Box>
             <Button
-              sx={{ mt: 1.3, mb: 1.3, minWidth: 250, background: "orange" }}
+              sx={{
+                mt: 1.3,
+                mb: 1.3,
+                minWidth: 250,
+                background: "#F58634",
+                borderRadius: "8px",
+              }}
               variant="contained"
             >
               <DownloadIcon />
@@ -255,9 +266,8 @@ const SaleVsDate = () => {
             style={{
               background: "white",
               padding: "15px",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
             }}
+            className="boxShadow"
           >
             <Box
               sx={{

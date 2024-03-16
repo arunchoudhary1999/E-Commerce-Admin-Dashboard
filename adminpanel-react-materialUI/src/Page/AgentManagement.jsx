@@ -88,7 +88,7 @@ export default function AgentManagement() {
               }}
             >
               <Button
-                sx={{ background: "orange" }}
+                sx={{ background: "#F58634", borderRadius: "8px" }}
                 onClick={functionagentopenpopup}
                 variant="contained"
               >
@@ -178,6 +178,7 @@ export default function AgentManagement() {
                                 background: "lightGreen",
                                 color: "green",
                                 padding: "0 10px",
+                                borderRadius: "8px",
                               }}
                               variant="contained"
                             >
@@ -302,6 +303,7 @@ export default function AgentManagement() {
                       sx={{
                         background: "red",
                         color: "white",
+                        borderRadius: "8px",
                       }}
                       variant="contained"
                     >
@@ -318,7 +320,12 @@ export default function AgentManagement() {
               >
                 <Button
                   onClick={agent01functionopenpopup}
-                  sx={{ color: "orange", borderColor: "orange", mr: 2 }}
+                  sx={{
+                    color: "#F58634",
+                    borderColor: "#F58634",
+                    mr: 2,
+                    borderRadius: "8px",
+                  }}
                   variant="outlined"
                 >
                   Edit Agent Details
@@ -412,6 +419,7 @@ export default function AgentManagement() {
                                 background: "lightGreen",
                                 padding: "0 8px",
                                 textTransform: "lowercase",
+                                borderRadius: "8px",
                               }}
                             >
                               Active
@@ -667,6 +675,7 @@ export default function AgentManagement() {
                         color: "red",
                         borderColor: "red",
                         background: "white",
+                        borderRadius: "8px",
                       }}
                       variant="contained"
                     >
@@ -676,13 +685,16 @@ export default function AgentManagement() {
                       onClick={closepopup}
                       color="error"
                       variant="contained"
+                      sx={{
+                        borderRadius: "8px",
+                      }}
                     >
                       Suspend Member
                     </Button>
                   </DialogActions>
                 </Dialog>
                 <Button
-                  sx={{ background: "orange" }}
+                  sx={{ background: "#F58634", borderRadius: "8px" }}
                   variant="contained"
                   onClick={functionopenpopup}
                 >
@@ -907,12 +919,13 @@ export default function AgentManagement() {
                       <Button
                         onClick={closepopup}
                         sx={{
-                          color: "orange",
-                          borderColor: "orange",
+                          color: "#F58634",
+                          borderColor: "#F58634",
                           pt: 1.5,
                           pb: 1.5,
                           pl: 5,
                           pr: 5,
+                          borderRadius: "8px",
                         }}
                         variant="outlined"
                       >
@@ -921,12 +934,13 @@ export default function AgentManagement() {
                       <Button
                         onClick={closepopup}
                         sx={{
-                          background: "orange",
+                          background: "#F58634",
                           color: "white",
                           pt: 1.5,
                           pb: 1.5,
                           pl: 5,
                           pr: 5,
+                          borderRadius: "8px",
                         }}
                         variant="contained"
                       >
@@ -965,7 +979,7 @@ export default function AgentManagement() {
                   >
                     <PeopleOutlineIcon
                       sx={{
-                        color: "orange",
+                        color: "#F58634",
                         background: "#ffffcc",
                         p: 1,
                         fontSize: "40px",
@@ -1091,7 +1105,7 @@ export default function AgentManagement() {
                   >
                     <ShoppingBagIcon
                       sx={{
-                        color: "orange",
+                        color: "#F58634",
                         background: "#ffffcc",
                         p: 1,
                         fontSize: "40px",

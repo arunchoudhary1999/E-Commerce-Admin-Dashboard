@@ -531,7 +531,20 @@ export default function EnhancedTable() {
                     <TableCell align="right">{row.calories}</TableCell>
                     <TableCell align="right">{row.fat}</TableCell>
                     <TableCell align="right">{row.carbs}</TableCell>
-                    <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">
+                      <span
+                        style={{
+                          background: "rgba(50, 147, 111, 0.16)",
+                          padding: "4px 11px 4px 11px",
+                          borderRadius: "8px",
+                          color: "rgba(81, 156, 102, 1)",
+                          fontFamily: "Inter",
+                          // fontSize: "11.9px",
+                        }}
+                      >
+                        {row.protein}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 );
               })}

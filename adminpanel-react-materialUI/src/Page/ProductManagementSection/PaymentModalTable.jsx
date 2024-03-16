@@ -21,14 +21,24 @@ import FilterListIcon from "@mui/icons-material/FilterList";
 import { visuallyHidden } from "@mui/utils";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Divider from "@mui/material/Divider";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
-function createData(id, img, name, calories, fat, carbs, protein) {
+function createData(
+  id,
+  img,
+  name,
+  calories,
+  fat,
+  carbs,
+  protein,
+  suger,
+  vitamin
+) {
   return {
     id,
     img,
@@ -37,6 +47,8 @@ function createData(id, img, name, calories, fat, carbs, protein) {
     fat,
     carbs,
     protein,
+    suger,
+    vitamin,
   };
 }
 
@@ -48,7 +60,9 @@ const rows = [
     305,
     3.7,
     67,
-    4.3
+    4.3,
+    "Pending",
+    "Pending"
   ),
   createData(
     2,
@@ -57,7 +71,9 @@ const rows = [
     452,
     25.0,
     51,
-    4.9
+    4.9,
+    "Pending",
+    "Pending"
   ),
   createData(
     3,
@@ -66,7 +82,9 @@ const rows = [
     262,
     16.0,
     24,
-    6.0
+    6.0,
+    "Pending",
+    "Pending"
   ),
   createData(
     4,
@@ -75,7 +93,9 @@ const rows = [
     159,
     6.0,
     24,
-    4.0
+    4.0,
+    "Pending",
+    "Pending"
   ),
   createData(
     5,
@@ -84,7 +104,9 @@ const rows = [
     356,
     16.0,
     49,
-    3.9
+    3.9,
+    "Pending",
+    "Pending"
   ),
   createData(
     6,
@@ -93,7 +115,9 @@ const rows = [
     408,
     3.2,
     87,
-    6.5
+    6.5,
+    "Pending",
+    "Pending"
   ),
   createData(
     7,
@@ -102,7 +126,9 @@ const rows = [
     237,
     9.0,
     37,
-    4.3
+    4.3,
+    "Pending",
+    "Pending"
   ),
   createData(
     8,
@@ -111,7 +137,9 @@ const rows = [
     375,
     0.0,
     94,
-    0.0
+    0.0,
+    "Pending",
+    "Pending"
   ),
   createData(
     9,
@@ -120,7 +148,9 @@ const rows = [
     518,
     26.0,
     65,
-    7.0
+    7.0,
+    "Pending",
+    "Pending"
   ),
   createData(
     10,
@@ -129,7 +159,9 @@ const rows = [
     392,
     0.2,
     98,
-    0.0
+    0.0,
+    "Pending",
+    "Pending"
   ),
   createData(
     11,
@@ -138,7 +170,9 @@ const rows = [
     318,
     0,
     81,
-    2.0
+    2.0,
+    "Pending",
+    "Pending"
   ),
   createData(
     12,
@@ -147,7 +181,9 @@ const rows = [
     360,
     19.0,
     9,
-    37.0
+    37.0,
+    "Pending",
+    "Pending"
   ),
   createData(
     13,
@@ -156,7 +192,9 @@ const rows = [
     437,
     18.0,
     63,
-    4.0
+    4.0,
+    "Pending",
+    "Pending"
   ),
 ];
 
@@ -222,6 +260,18 @@ const headCells = [
     numeric: true,
     disablePadding: false,
     label: "Protein (g)",
+  },
+  {
+    id: "suger",
+    numeric: true,
+    disablePadding: false,
+    label: "Suger (g)",
+  },
+  {
+    id: "vitamin",
+    numeric: true,
+    disablePadding: false,
+    label: "Vitamin (g)",
   },
 ];
 
@@ -458,6 +508,11 @@ export default function EnhancedTable() {
     [order, orderBy, page, rowsPerPage]
   );
 
+  const [age, setAge] = React.useState("");
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
   return (
     <Box sx={{ width: "100%" }}>
       <Paper sx={{ width: "100%", mb: 2 }}>
@@ -524,6 +579,46 @@ export default function EnhancedTable() {
                     <TableCell align="right">{row.fat}</TableCell>
                     <TableCell align="right">{row.carbs}</TableCell>
                     <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">
+                      <span
+                        style={{
+                          background: "rgba(94, 99, 102, 0.08)",
+
+                          padding: "2.97px 8.18px 2.97px 8.18px",
+                          color: "rgba(139, 141, 151, 1)",
+
+                          borderRadius: "5.95px",
+
+                          fontFamily: "Inter",
+                          // fontSize: "11.9px",
+                        }}
+                      >
+                        <span
+                          style={{
+                            display: "inline-flex",
+                            justifyContent: "space-evenly",
+                            alignItems: "center",
+                          }}
+                        >
+                          {row.suger}
+                          <KeyboardArrowDownIcon />
+                        </span>
+                      </span>
+                    </TableCell>
+                    <TableCell align="right">
+                      <span
+                        style={{
+                          background: "rgba(255, 242, 226, 1)",
+                          padding: "2.97px 8.18px 2.97px 8.18px",
+                          borderRadius: "5.95px",
+                          color: "rgba(28, 29, 34, 1)",
+                          fontFamily: "Inter",
+                          // fontSize: "11.9px",
+                        }}
+                      >
+                        {row.vitamin}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 );
               })}

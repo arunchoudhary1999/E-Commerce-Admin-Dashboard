@@ -71,7 +71,10 @@ export default function EditProductDetails01() {
               </div>
 
               <Box>
-                <Button sx={{ background: "black", mr: 2 }} variant="contained">
+                <Button
+                  sx={{ background: "black", mr: 2, borderRadius: "8px" }}
+                  variant="contained"
+                >
                   <ListItem
                     disablePadding
                     onClick={() => {
@@ -83,7 +86,10 @@ export default function EditProductDetails01() {
                   <KeyboardArrowDownIcon sx={{ ml: 1 }} />
                 </Button>
 
-                <Button sx={{ background: "#b30000" }} variant="contained">
+                <Button
+                  sx={{ background: "#b30000", borderRadius: "8px" }}
+                  variant="contained"
+                >
                   Delete Product
                 </Button>
               </Box>
@@ -153,6 +159,7 @@ export default function EditProductDetails01() {
                         background: "lightGreen",
                         padding: "0 8px",
                         textTransform: "lowercase",
+                        borderRadius: "8px",
                       }}
                     >
                       Pending
@@ -212,7 +219,7 @@ export default function EditProductDetails01() {
                   >
                     <AccessTimeIcon
                       sx={{
-                        color: "orange",
+                        color: "#F58634",
                         background: "#f5f5f0",
                         p: 1,
                         fontSize: "40px",

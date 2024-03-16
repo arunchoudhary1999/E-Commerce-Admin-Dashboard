@@ -50,7 +50,9 @@ const TableChartFive = () => {
               color: "rgba(34, 34, 34, 1)",
             }}
           >
-            <StairsIcon sx={{ marginBottom: "-4px", color: "orange", mr: 1 }} />
+            <StairsIcon
+              sx={{ marginBottom: "-4px", color: "#F58634", mr: 1 }}
+            />
             Top Selling
           </Typography>
 
@@ -84,14 +86,14 @@ const TableChartFive = () => {
             <Table aria-label="simple table">
               <TableHead>
                 <TableRow>
-                  <TableCell sx={{ color: "orange" }}>Product</TableCell>
-                  <TableCell sx={{ color: "orange" }} align="right">
+                  <TableCell sx={{ color: "#F58634" }}>Product</TableCell>
+                  <TableCell sx={{ color: "#F58634" }} align="right">
                     Orders
                   </TableCell>
-                  <TableCell sx={{ color: "orange" }} align="right">
+                  <TableCell sx={{ color: "#F58634" }} align="right">
                     Qty
                   </TableCell>
-                  <TableCell sx={{ color: "orange" }} align="right">
+                  <TableCell sx={{ color: "#F58634" }} align="right">
                     Sales
                   </TableCell>
                 </TableRow>

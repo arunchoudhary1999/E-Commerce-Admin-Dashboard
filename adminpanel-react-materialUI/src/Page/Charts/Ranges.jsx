@@ -48,7 +48,7 @@ export default function Ranges() {
     },
     [`& .${linearProgressClasses.bar}`]: {
       borderRadius: 15,
-      backgroundColor: theme.palette.mode === "light" ? "orange" : "#308fe8",
+      backgroundColor: theme.palette.mode === "light" ? "#F58634" : "#308fe8",
     },
   }));
 
@@ -74,7 +74,7 @@ export default function Ranges() {
     },
     [`& .${linearProgressClasses.bar}`]: {
       borderRadius: 15,
-      backgroundColor: theme.palette.mode === "light" ? "orange" : "#308fe8",
+      backgroundColor: theme.palette.mode === "light" ? "#F58634" : "#308fe8",
     },
   }));
 
@@ -98,7 +98,7 @@ export default function Ranges() {
           <Typography id="input-slider" gutterBottom>
             All Customers
           </Typography>
-          <Typography sx={{ color: "orange" }} id="input-slider" gutterBottom>
+          <Typography sx={{ color: "#F58634" }} id="input-slider" gutterBottom>
             {data01}
           </Typography>
         </Box>
@@ -130,7 +130,7 @@ export default function Ranges() {
           <Typography id="input-slider" gutterBottom>
             All Customers
           </Typography>
-          <Typography sx={{ color: "orange" }} id="input-slider" gutterBottom>
+          <Typography sx={{ color: "#F58634" }} id="input-slider" gutterBottom>
             {data03}
           </Typography>
         </Box>

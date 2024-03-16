@@ -59,7 +59,7 @@ export default function OrderManagement() {
           >
             <Button
               onClick={functionopenpopup}
-              sx={{ background: "orange" }}
+              sx={{ background: "#F58634", borderRadius: "8px" }}
               variant="contained"
             >
               Order Summary
@@ -322,18 +322,26 @@ export default function OrderManagement() {
               <DialogActions>
                 <Button
                   onClick={closepopup}
-                  sx={{ background: "orange" }}
+                  sx={{ background: "#F58634", borderRadius: "8px" }}
                   variant="contained"
                 >
                   Mark is Complete | <KeyboardArrowDownIcon />
                 </Button>
-                <Button onClick={closepopup} color="error" variant="contained">
+                <Button
+                  sx={{ borderRadius: "8px" }}
+                  onClick={closepopup}
+                  color="error"
+                  variant="contained"
+                >
                   Close Order
                 </Button>
               </DialogActions>
             </Dialog>
 
-            <Button sx={{ background: "orange" }} variant="contained">
+            <Button
+              sx={{ background: "#F58634", borderRadius: "8px" }}
+              variant="contained"
+            >
               <AddIcon />
               Create a New Order
             </Button>
@@ -358,7 +366,7 @@ export default function OrderManagement() {
             >
               <ShoppingBagIcon
                 sx={{
-                  color: "orange",
+                  color: "#F58634",
                   background: "#ffeb99",
                   p: 1,
                   fontSize: "40px",
@@ -429,7 +437,7 @@ export default function OrderManagement() {
             >
               <ShoppingBagIcon
                 sx={{
-                  color: "orange",
+                  color: "#F58634",
                   background: "#ffeb99",
                   p: 1,
                   fontSize: "40px",
@@ -471,7 +479,7 @@ export default function OrderManagement() {
                   90
                   <span
                     style={{
-                      color: "orange",
+                      color: "#F58634",
                       fontSize: "12px",
                       fontWeight: "200",
                     }}
@@ -509,7 +517,7 @@ export default function OrderManagement() {
             >
               <ShoppingCartIcon
                 sx={{
-                  color: "orange",
+                  color: "#F58634",
                   background: "#ffeb99",
                   p: 1,
                   fontSize: "40px",
@@ -546,7 +554,7 @@ export default function OrderManagement() {
             >
               <Typography
                 variant="h6"
-                sx={{ fontSize: "15px", color: "orange" }}
+                sx={{ fontSize: "15px", color: "#F58634" }}
               >
                 Abandoned Cart
                 <br />

@@ -57,7 +57,7 @@ export default function UserManagement() {
               }}
             >
               <Button
-                sx={{ background: "orange" }}
+                sx={{ background: "#F58634", borderRadius: "8px" }}
                 variant="contained"
                 onClick={() => {
                   navigate("/customersummary");
@@ -67,7 +67,7 @@ export default function UserManagement() {
               </Button>
 
               <Button
-                sx={{ background: "orange" }}
+                sx={{ background: "#F58634", borderRadius: "8px" }}
                 onClick={functionopenpopup}
                 variant="contained"
               >
@@ -352,11 +352,12 @@ export default function UserManagement() {
                     <Button
                       onClick={closepopup}
                       sx={{
-                        color: "orange",
-                        borderColor: "orange",
+                        color: "#F58634",
+                        borderColor: "#F58634",
                         width: "49%",
                         pt: 1.5,
                         pb: 1.5,
+                        borderRadius: "8px",
                       }}
                       variant="outlined"
                     >
@@ -365,11 +366,12 @@ export default function UserManagement() {
                     <Button
                       onClick={closepopup}
                       sx={{
-                        background: "orange",
+                        background: "#F58634",
                         color: "white",
                         width: "49%",
                         pt: 1.5,
                         pb: 1.5,
+                        borderRadius: "8px",
                       }}
                       variant="contained"
                     >

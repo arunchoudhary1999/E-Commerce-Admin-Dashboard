@@ -33,7 +33,7 @@ const CardChartSix = () => {
             }}
           >
             <ViewInArIcon
-              sx={{ marginBottom: "-4px", color: "orange", mr: 1 }}
+              sx={{ marginBottom: "-4px", color: "#F58634", mr: 1 }}
             />
             Order Status
           </Typography>
@@ -82,7 +82,10 @@ const CardChartSix = () => {
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography variant="h6" sx={{ color: "orange", fontSize: "15px" }}>
+            <Typography
+              variant="h6"
+              sx={{ color: "#F58634", fontSize: "15px" }}
+            >
               160
             </Typography>
             <Typography
@@ -108,7 +111,10 @@ const CardChartSix = () => {
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography variant="h6" sx={{ color: "orange", fontSize: "15px" }}>
+            <Typography
+              variant="h6"
+              sx={{ color: "#F58634", fontSize: "15px" }}
+            >
               40
             </Typography>
             <Typography
@@ -134,7 +140,10 @@ const CardChartSix = () => {
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography variant="h6" sx={{ color: "orange", fontSize: "15px" }}>
+            <Typography
+              variant="h6"
+              sx={{ color: "#F58634", fontSize: "15px" }}
+            >
               120
             </Typography>
             <Typography
@@ -160,7 +169,10 @@ const CardChartSix = () => {
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography variant="h6" sx={{ color: "orange", fontSize: "15px" }}>
+            <Typography
+              variant="h6"
+              sx={{ color: "#F58634", fontSize: "15px" }}
+            >
               60
             </Typography>
             <Typography
@@ -186,7 +198,10 @@ const CardChartSix = () => {
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography variant="h6" sx={{ color: "orange", fontSize: "15px" }}>
+            <Typography
+              variant="h6"
+              sx={{ color: "#F58634", fontSize: "15px" }}
+            >
               140
             </Typography>
             <Typography
@@ -212,7 +227,10 @@ const CardChartSix = () => {
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography variant="h6" sx={{ color: "orange", fontSize: "15px" }}>
+            <Typography
+              variant="h6"
+              sx={{ color: "#F58634", fontSize: "15px" }}
+            >
               100
             </Typography>
             <Typography
@@ -239,7 +257,10 @@ const CardChartSix = () => {
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography variant="h6" sx={{ color: "orange", fontSize: "15px" }}>
+            <Typography
+              variant="h6"
+              sx={{ color: "#F58634", fontSize: "15px" }}
+            >
               160
             </Typography>
             <Typography
@@ -265,7 +286,10 @@ const CardChartSix = () => {
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography variant="h6" sx={{ color: "orange", fontSize: "15px" }}>
+            <Typography
+              variant="h6"
+              sx={{ color: "#F58634", fontSize: "15px" }}
+            >
               160
             </Typography>
             <Typography
@@ -292,7 +316,10 @@ const CardChartSix = () => {
                 "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography variant="h6" sx={{ color: "orange", fontSize: "15px" }}>
+            <Typography
+              variant="h6"
+              sx={{ color: "#F58634", fontSize: "15px" }}
+            >
               110
             </Typography>
             <Typography variant="h6" sx={{ fontSize: "15px" }}>

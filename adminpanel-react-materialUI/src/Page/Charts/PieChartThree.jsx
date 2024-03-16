@@ -29,12 +29,12 @@ const PieChartThree = () => {
     chartInstance.current = new Chart(myChartRef, {
       type: "doughnut",
       data: {
-        labels: ["orange", "caribbean"],
+        labels: ["#F58634", "caribbean"],
         datasets: [
           {
             label: "Data",
             data: [25, 75],
-            backgroundColor: ["orange", "#00cc99"],
+            backgroundColor: ["#F58634", "#00cc99"],
           },
         ],
       },
@@ -64,7 +64,7 @@ const PieChartThree = () => {
               color: "rgba(34, 34, 34, 1)",
             }}
           >
-            <ShoppingCartIcon sx={{ color: "orange", mr: 1 }} />
+            <ShoppingCartIcon sx={{ color: "#F58634", mr: 1 }} />
             Abandoned Cart
           </Typography>
 

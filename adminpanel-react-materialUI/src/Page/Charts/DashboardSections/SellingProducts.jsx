@@ -23,7 +23,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import DownloadIcon from "@mui/icons-material/Download";
 
-function createData(id, img, name, calories, fat, carbs, protein) {
+function createData(id, img, name, calories, fat, carbs, protein, suger) {
   return {
     id,
     img,
@@ -32,6 +32,7 @@ function createData(id, img, name, calories, fat, carbs, protein) {
     fat,
     carbs,
     protein,
+    suger,
   };
 }
 
@@ -43,7 +44,8 @@ const rows = [
     305,
     3.7,
     67,
-    4.3
+    4.3,
+    3.7
   ),
   createData(
     2,
@@ -52,7 +54,8 @@ const rows = [
     452,
     25.0,
     51,
-    4.9
+    4.9,
+    3.7
   ),
   createData(
     3,
@@ -61,7 +64,8 @@ const rows = [
     262,
     16.0,
     24,
-    6.0
+    6.0,
+    3.7
   ),
   createData(
     4,
@@ -70,7 +74,8 @@ const rows = [
     159,
     6.0,
     24,
-    4.0
+    4.0,
+    3.7
   ),
   createData(
     5,
@@ -79,7 +84,8 @@ const rows = [
     356,
     16.0,
     49,
-    3.9
+    3.9,
+    3.7
   ),
   createData(
     6,
@@ -88,7 +94,8 @@ const rows = [
     408,
     3.2,
     87,
-    6.5
+    6.5,
+    3.7
   ),
   createData(
     7,
@@ -97,7 +104,8 @@ const rows = [
     237,
     9.0,
     37,
-    4.3
+    4.3,
+    3.7
   ),
   createData(
     8,
@@ -106,7 +114,8 @@ const rows = [
     375,
     0.0,
     94,
-    0.0
+    0.0,
+    3.7
   ),
   createData(
     9,
@@ -115,7 +124,8 @@ const rows = [
     518,
     26.0,
     65,
-    7.0
+    7.0,
+    3.7
   ),
   createData(
     10,
@@ -124,7 +134,8 @@ const rows = [
     392,
     0.2,
     98,
-    0.0
+    0.0,
+    3.7
   ),
   createData(
     11,
@@ -133,7 +144,8 @@ const rows = [
     318,
     0,
     81,
-    2.0
+    2.0,
+    3.7
   ),
   createData(
     12,
@@ -142,7 +154,8 @@ const rows = [
     360,
     19.0,
     9,
-    37.0
+    37.0,
+    3.7
   ),
   createData(
     13,
@@ -151,7 +164,8 @@ const rows = [
     437,
     18.0,
     63,
-    4.0
+    4.0,
+    3.7
   ),
 ];
 
@@ -215,6 +229,12 @@ const headCells = [
     disablePadding: false,
     label: "Protein (g)",
   },
+  {
+    id: "suger",
+    numeric: true,
+    disablePadding: false,
+    label: "Suger (g)",
+  },
 ];
 
 function EnhancedTableHead(props) {
@@ -225,7 +245,7 @@ function EnhancedTableHead(props) {
 
   return (
     <TableHead>
-      <TableRow sx={{ background: "orange" }}>
+      <TableRow sx={{ background: "#F58634" }}>
         <TableCell padding="checkbox"></TableCell>
         {headCells.map((headCell) => (
           <TableCell
@@ -356,7 +376,10 @@ export default function EnhancedTable() {
                   <MenuItem value={365}>Yearly</MenuItem>
                 </Select>
               </FormControl>
-              <Button sx={{ background: "orange" }} variant="contained">
+              <Button
+                sx={{ background: "#F58634", borderRadius: "8px" }}
+                variant="contained"
+              >
                 <DownloadIcon />
                 Download to Excel
               </Button>
@@ -364,7 +387,7 @@ export default function EnhancedTable() {
           </Box>
         </Box>
       </Box>
-      <Paper sx={{ width: "100%", mb: 2 }}>
+      <Box sx={{ width: "100%", mb: 2 }} className="boxShadow">
         {/* <ProductManagementTable numSelected={selected.length} /> */}
         <TableContainer>
           <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle">
@@ -418,6 +441,7 @@ export default function EnhancedTable() {
                     <TableCell align="right">{row.fat}</TableCell>
                     <TableCell align="right">{row.carbs}</TableCell>
                     <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">{row.suger}</TableCell>
                     <TableCell padding="checkbox"></TableCell>
                   </TableRow>
                 );
@@ -440,7 +464,7 @@ export default function EnhancedTable() {
           onRowsPerPageChange={handleChangeRowsPerPage}
           sx={{ mr: 5 }}
         />
-      </Paper>
+      </Box>
     </Box>
   );
 }

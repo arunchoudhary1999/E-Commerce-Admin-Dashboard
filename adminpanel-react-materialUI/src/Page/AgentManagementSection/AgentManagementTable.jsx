@@ -26,7 +26,17 @@ import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
-function createData(id, img, name, calories, fat, carbs, protein) {
+function createData(
+  id,
+  img,
+  name,
+  calories,
+  fat,
+  carbs,
+  protein,
+  suger,
+  vitamin
+) {
   return {
     id,
     img,
@@ -35,6 +45,8 @@ function createData(id, img, name, calories, fat, carbs, protein) {
     fat,
     carbs,
     protein,
+    suger,
+    vitamin,
   };
 }
 
@@ -46,7 +58,9 @@ const rows = [
     305,
     3.7,
     67,
-    4.3
+    4.3,
+    3.7,
+    "Active"
   ),
   createData(
     2,
@@ -55,7 +69,9 @@ const rows = [
     452,
     25.0,
     51,
-    4.9
+    4.9,
+    3.7,
+    "Active"
   ),
   createData(
     3,
@@ -64,7 +80,9 @@ const rows = [
     262,
     16.0,
     24,
-    6.0
+    6.0,
+    3.7,
+    "Active"
   ),
   createData(
     4,
@@ -73,7 +91,9 @@ const rows = [
     159,
     6.0,
     24,
-    4.0
+    4.0,
+    3.7,
+    "Active"
   ),
   createData(
     5,
@@ -82,7 +102,9 @@ const rows = [
     356,
     16.0,
     49,
-    3.9
+    3.9,
+    3.7,
+    "Active"
   ),
   createData(
     6,
@@ -91,7 +113,9 @@ const rows = [
     408,
     3.2,
     87,
-    6.5
+    6.5,
+    3.7,
+    "Active"
   ),
   createData(
     7,
@@ -100,7 +124,9 @@ const rows = [
     237,
     9.0,
     37,
-    4.3
+    4.3,
+    3.7,
+    "Active"
   ),
   createData(
     8,
@@ -109,7 +135,9 @@ const rows = [
     375,
     0.0,
     94,
-    0.0
+    0.0,
+    3.7,
+    "Active"
   ),
   createData(
     9,
@@ -118,7 +146,9 @@ const rows = [
     518,
     26.0,
     65,
-    7.0
+    7.0,
+    3.7,
+    "Active"
   ),
   createData(
     10,
@@ -127,7 +157,9 @@ const rows = [
     392,
     0.2,
     98,
-    0.0
+    0.0,
+    3.7,
+    "Active"
   ),
   createData(
     11,
@@ -136,7 +168,9 @@ const rows = [
     318,
     0,
     81,
-    2.0
+    2.0,
+    3.7,
+    "Active"
   ),
   createData(
     12,
@@ -145,7 +179,9 @@ const rows = [
     360,
     19.0,
     9,
-    37.0
+    37.0,
+    3.7,
+    "Active"
   ),
   createData(
     13,
@@ -154,7 +190,9 @@ const rows = [
     437,
     18.0,
     63,
-    4.0
+    4.0,
+    3.7,
+    "Active"
   ),
 ];
 
@@ -227,6 +265,18 @@ const headCells = [
     numeric: true,
     disablePadding: false,
     label: "Protein (g)",
+  },
+  {
+    id: "suger",
+    numeric: true,
+    disablePadding: false,
+    label: "Suger (g)",
+  },
+  {
+    id: "vitamin",
+    numeric: true,
+    disablePadding: false,
+    label: "Vitamin (g)",
   },
 ];
 
@@ -515,6 +565,21 @@ export default function EnhancedTable() {
                     <TableCell align="right">{row.fat}</TableCell>
                     <TableCell align="right">{row.carbs}</TableCell>
                     <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell align="right">{row.suger}</TableCell>
+                    <TableCell align="right">
+                      <span
+                        style={{
+                          background: "rgba(50, 147, 111, 0.16)",
+                          padding: "4px 11px 4px 11px",
+                          borderRadius: "8px",
+                          color: "rgba(81, 156, 102, 1)",
+                          fontFamily: "Inter",
+                          // fontSize: "11.9px",
+                        }}
+                      >
+                        {row.vitamin}
+                      </span>
+                    </TableCell>
                   </TableRow>
                 );
               })}

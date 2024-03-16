@@ -34,7 +34,9 @@ const RangeChartFour = () => {
               color: "rgba(34, 34, 34, 1)",
             }}
           >
-            <PersonIcon sx={{ marginBottom: "-4px", color: "orange", mr: 1 }} />
+            <PersonIcon
+              sx={{ marginBottom: "-4px", color: "#F58634", mr: 1 }}
+            />
             New Users
           </Typography>
 
