@@ -190,6 +190,7 @@ export default function SideBar() {
                   p: "10px 15px",
                   mr: 1.5,
                   borderRadius: "8px",
+                  boxShadow: "none",
                 }}
                 startIcon={<StorefrontIcon />}
               >
@@ -204,6 +205,7 @@ export default function SideBar() {
                 className="buttonSideBarIssue"
                 sx={{
                   p: "10px 0px",
+                  boxShadow: "none",
                 }}
               >
                 <PersonIcon sx={{ color: "black" }} />

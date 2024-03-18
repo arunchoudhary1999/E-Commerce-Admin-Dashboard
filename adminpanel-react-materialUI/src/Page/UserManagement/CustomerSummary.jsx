@@ -66,6 +66,7 @@ export default function CustomerSummary() {
                     mr: 2,
                     fontSize: "13px",
                     borderRadius: "8px",
+                    boxShadow: "none",
                   }}
                   variant="outlined"
                 >
@@ -79,6 +80,7 @@ export default function CustomerSummary() {
                     mr: 2,
                     fontSize: "13px",
                     borderRadius: "8px",
+                    boxShadow: "none",
                   }}
                   variant="outlined"
                 >
@@ -91,6 +93,7 @@ export default function CustomerSummary() {
                     mr: 2,
                     fontSize: "13px",
                     borderRadius: "8px",
+                    boxShadow: "none",
                   }}
                   variant="contained"
                 >
@@ -105,6 +108,7 @@ export default function CustomerSummary() {
                     background: "#b30000",
                     fontSize: "13px",
                     borderRadius: "8px",
+                    boxShadow: "none",
                   }}
                   variant="contained"
                 >
@@ -171,6 +175,7 @@ export default function CustomerSummary() {
                           padding: "0 8px",
                           textTransform: "lowercase",
                           borderRadius: "8px",
+                          boxShadow: "none",
                         }}
                       >
                         Active
@@ -281,7 +286,7 @@ export default function CustomerSummary() {
                         }}
                       />
                       <FormControl
-                        sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                        sx={{ minWidth: 90, alignSelf: "flex-start" }}
                         size="small"
                       >
                         <InputLabel id="demo-select-small-label">
@@ -293,6 +298,10 @@ export default function CustomerSummary() {
                           value={time}
                           label="Time"
                           onChange={handleChange}
+                          sx={{
+                            boxShadow: "none",
+                            ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                          }}
                         >
                           <MenuItem value="">
                             <em>None</em>
@@ -404,7 +413,7 @@ export default function CustomerSummary() {
                         }}
                       />
                       <FormControl
-                        sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                        sx={{ minWidth: 90, alignSelf: "flex-start" }}
                         size="small"
                       >
                         <InputLabel id="demo-select-small-label">
@@ -416,6 +425,10 @@ export default function CustomerSummary() {
                           value={time}
                           label="Time"
                           onChange={handleChange}
+                          sx={{
+                            boxShadow: "none",
+                            ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                          }}
                         >
                           <MenuItem value="">
                             <em>None</em>
@@ -494,7 +507,7 @@ export default function CustomerSummary() {
                         }}
                       />
                       <FormControl
-                        sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                        sx={{ minWidth: 90, alignSelf: "flex-start" }}
                         size="small"
                       >
                         <InputLabel id="demo-select-small-label">
@@ -506,6 +519,10 @@ export default function CustomerSummary() {
                           value={time}
                           label="Time"
                           onChange={handleChange}
+                          sx={{
+                            boxShadow: "none",
+                            ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                          }}
                         >
                           <MenuItem value="">
                             <em>None</em>

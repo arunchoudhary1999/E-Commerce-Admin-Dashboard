@@ -72,7 +72,12 @@ export default function EditProductDetails01() {
 
               <Box>
                 <Button
-                  sx={{ background: "black", mr: 2, borderRadius: "8px" }}
+                  sx={{
+                    background: "black",
+                    mr: 2,
+                    borderRadius: "8px",
+                    boxShadow: "none",
+                  }}
                   variant="contained"
                 >
                   <ListItem
@@ -87,7 +92,11 @@ export default function EditProductDetails01() {
                 </Button>
 
                 <Button
-                  sx={{ background: "#b30000", borderRadius: "8px" }}
+                  sx={{
+                    background: "#b30000",
+                    borderRadius: "8px",
+                    boxShadow: "none",
+                  }}
                   variant="contained"
                 >
                   Delete Product
@@ -160,6 +169,7 @@ export default function EditProductDetails01() {
                         padding: "0 8px",
                         textTransform: "lowercase",
                         borderRadius: "8px",
+                        boxShadow: "none",
                       }}
                     >
                       Pending
@@ -227,7 +237,7 @@ export default function EditProductDetails01() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -239,6 +249,10 @@ export default function EditProductDetails01() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>
@@ -297,7 +311,7 @@ export default function EditProductDetails01() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -309,6 +323,10 @@ export default function EditProductDetails01() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>
@@ -391,7 +409,7 @@ export default function EditProductDetails01() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -403,6 +421,10 @@ export default function EditProductDetails01() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>
@@ -489,7 +511,7 @@ export default function EditProductDetails01() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -501,6 +523,10 @@ export default function EditProductDetails01() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>

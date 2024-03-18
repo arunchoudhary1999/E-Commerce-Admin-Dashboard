@@ -23,7 +23,11 @@ export default function ProductManagement() {
             }}
           >
             <Button
-              sx={{ background: "#F58634", borderRadius: "8px" }}
+              sx={{
+                background: "#F58634",
+                borderRadius: "8px",
+                boxShadow: "none",
+              }}
               variant="contained"
             >
               <ListItem
@@ -38,7 +42,11 @@ export default function ProductManagement() {
             </Button>
 
             <Button
-              sx={{ background: "#F58634", borderRadius: "8px" }}
+              sx={{
+                background: "#F58634",
+                borderRadius: "8px",
+                boxShadow: "none",
+              }}
               variant="contained"
             >
               <AddIcon />

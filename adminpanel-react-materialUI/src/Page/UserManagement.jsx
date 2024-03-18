@@ -57,7 +57,11 @@ export default function UserManagement() {
               }}
             >
               <Button
-                sx={{ background: "#F58634", borderRadius: "8px" }}
+                sx={{
+                  background: "#F58634",
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 variant="contained"
                 onClick={() => {
                   navigate("/customersummary");
@@ -67,7 +71,11 @@ export default function UserManagement() {
               </Button>
 
               <Button
-                sx={{ background: "#F58634", borderRadius: "8px" }}
+                sx={{
+                  background: "#F58634",
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 onClick={functionopenpopup}
                 variant="contained"
               >
@@ -130,7 +138,12 @@ export default function UserManagement() {
                                     id="outlined-basic"
                                     label="Customer Name"
                                     variant="outlined"
-                                    sx={{ mt: 1, mb: 1, width: "100%" }}
+                                    sx={{
+                                      mt: 1,
+                                      mb: 1,
+                                      width: "100%",
+                                      background: "rgba(239, 241, 249, 0.6)",
+                                    }}
                                   />
                                 </Box>
                                 <Box>
@@ -138,7 +151,12 @@ export default function UserManagement() {
                                     id="outlined-basic"
                                     label="Customer Email"
                                     variant="outlined"
-                                    sx={{ mt: 1, mb: 1, width: "100%" }}
+                                    sx={{
+                                      mt: 1,
+                                      mb: 1,
+                                      width: "100%",
+                                      background: "rgba(239, 241, 249, 0.6)",
+                                    }}
                                   />
                                 </Box>
                                 <Box
@@ -161,6 +179,10 @@ export default function UserManagement() {
                                         value={time}
                                         label="State"
                                         onChange={handleChange}
+                                        sx={{
+                                          background:
+                                            "rgba(239, 241, 249, 0.6)",
+                                        }}
                                       >
                                         <MenuItem value="">
                                           <em>None</em>
@@ -176,7 +198,12 @@ export default function UserManagement() {
                                       id="outlined-basic"
                                       label="Mobile Number"
                                       variant="outlined"
-                                      sx={{ mt: 1, mb: 1, width: "100%" }}
+                                      sx={{
+                                        mt: 1,
+                                        mb: 1,
+                                        width: "100%",
+                                        background: "rgba(239, 241, 249, 0.6)",
+                                      }}
                                     />
                                   </Box>
                                 </Box>
@@ -220,7 +247,13 @@ export default function UserManagement() {
                                         id="outlined-basic"
                                         label="Building No. Streel Address"
                                         variant="outlined"
-                                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                                        sx={{
+                                          mt: 1,
+                                          mb: 1,
+                                          width: "100%",
+                                          background:
+                                            "rgba(239, 241, 249, 0.6)",
+                                        }}
                                       />
                                     </Box>
 
@@ -229,7 +262,13 @@ export default function UserManagement() {
                                         id="outlined-basic"
                                         label="Landmark"
                                         variant="outlined"
-                                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                                        sx={{
+                                          mt: 1,
+                                          mb: 1,
+                                          width: "100%",
+                                          background:
+                                            "rgba(239, 241, 249, 0.6)",
+                                        }}
                                       />
                                     </Box>
 
@@ -252,6 +291,10 @@ export default function UserManagement() {
                                             value={time}
                                             label="Time"
                                             onChange={handleChange}
+                                            sx={{
+                                              background:
+                                                "rgba(239, 241, 249, 0.6)",
+                                            }}
                                           >
                                             <MenuItem value="">
                                               <em>None</em>
@@ -282,6 +325,10 @@ export default function UserManagement() {
                                             value={time}
                                             label="Time"
                                             onChange={handleChange}
+                                            sx={{
+                                              background:
+                                                "rgba(239, 241, 249, 0.6)",
+                                            }}
                                           >
                                             <MenuItem value="">
                                               <em>None</em>
@@ -358,6 +405,7 @@ export default function UserManagement() {
                         pt: 1.5,
                         pb: 1.5,
                         borderRadius: "8px",
+                        boxShadow: "none",
                       }}
                       variant="outlined"
                     >
@@ -372,6 +420,7 @@ export default function UserManagement() {
                         pt: 1.5,
                         pb: 1.5,
                         borderRadius: "8px",
+                        boxShadow: "none",
                       }}
                       variant="contained"
                     >
@@ -417,7 +466,7 @@ export default function UserManagement() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -429,6 +478,10 @@ export default function UserManagement() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>
@@ -543,7 +596,7 @@ export default function UserManagement() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -555,6 +608,10 @@ export default function UserManagement() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>

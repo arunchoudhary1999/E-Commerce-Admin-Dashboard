@@ -88,7 +88,11 @@ export default function AgentManagement() {
               }}
             >
               <Button
-                sx={{ background: "#F58634", borderRadius: "8px" }}
+                sx={{
+                  background: "#F58634",
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 onClick={functionagentopenpopup}
                 variant="contained"
               >
@@ -141,7 +145,7 @@ export default function AgentManagement() {
                           color: "black",
                         }}
                       >
-                        Agent Infomation
+                        Agent Information
                       </Typography>
                     </Box>
 
@@ -179,6 +183,7 @@ export default function AgentManagement() {
                                 color: "green",
                                 padding: "0 10px",
                                 borderRadius: "8px",
+                                boxShadow: "none",
                               }}
                               variant="contained"
                             >
@@ -304,6 +309,7 @@ export default function AgentManagement() {
                         background: "red",
                         color: "white",
                         borderRadius: "8px",
+                        boxShadow: "none",
                       }}
                       variant="contained"
                     >
@@ -325,6 +331,7 @@ export default function AgentManagement() {
                     borderColor: "#F58634",
                     mr: 2,
                     borderRadius: "8px",
+                    boxShadow: "none",
                   }}
                   variant="outlined"
                 >
@@ -420,6 +427,7 @@ export default function AgentManagement() {
                                 padding: "0 8px",
                                 textTransform: "lowercase",
                                 borderRadius: "8px",
+                                boxShadow: "none",
                               }}
                             >
                               Active
@@ -676,6 +684,7 @@ export default function AgentManagement() {
                         borderColor: "red",
                         background: "white",
                         borderRadius: "8px",
+                        boxShadow: "none",
                       }}
                       variant="contained"
                     >
@@ -687,6 +696,7 @@ export default function AgentManagement() {
                       variant="contained"
                       sx={{
                         borderRadius: "8px",
+                        boxShadow: "none",
                       }}
                     >
                       Suspend Member
@@ -694,7 +704,11 @@ export default function AgentManagement() {
                   </DialogActions>
                 </Dialog>
                 <Button
-                  sx={{ background: "#F58634", borderRadius: "8px" }}
+                  sx={{
+                    background: "#F58634",
+                    borderRadius: "8px",
+                    boxShadow: "none",
+                  }}
                   variant="contained"
                   onClick={functionopenpopup}
                 >
@@ -767,7 +781,12 @@ export default function AgentManagement() {
                                       id="outlined-basic"
                                       label="Name"
                                       variant="outlined"
-                                      sx={{ mt: 1, mb: 1, width: "100%" }}
+                                      sx={{
+                                        mt: 1,
+                                        mb: 1,
+                                        width: "100%",
+                                        background: "rgba(239, 241, 249, 0.6)",
+                                      }}
                                     />
                                   </Box>
                                   <Box>
@@ -775,7 +794,12 @@ export default function AgentManagement() {
                                       id="outlined-basic"
                                       label="Marketing ID"
                                       variant="outlined"
-                                      sx={{ mt: 1, mb: 1, width: "100%" }}
+                                      sx={{
+                                        mt: 1,
+                                        mb: 1,
+                                        width: "100%",
+                                        background: "rgba(239, 241, 249, 0.6)",
+                                      }}
                                     />
                                   </Box>
                                   <Box
@@ -798,6 +822,10 @@ export default function AgentManagement() {
                                           value={time}
                                           label="State"
                                           onChange={handleChange}
+                                          sx={{
+                                            background:
+                                              "rgba(239, 241, 249, 0.6)",
+                                          }}
                                         >
                                           <MenuItem value="">
                                             <em>None</em>
@@ -813,7 +841,13 @@ export default function AgentManagement() {
                                         id="outlined-basic"
                                         label="Mobile Number"
                                         variant="outlined"
-                                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                                        sx={{
+                                          mt: 1,
+                                          mb: 1,
+                                          width: "100%",
+                                          background:
+                                            "rgba(239, 241, 249, 0.6)",
+                                        }}
                                       />
                                     </Box>
                                   </Box>
@@ -831,6 +865,10 @@ export default function AgentManagement() {
                                         value={time}
                                         label="Time"
                                         onChange={handleChange}
+                                        sx={{
+                                          background:
+                                            "rgba(239, 241, 249, 0.6)",
+                                        }}
                                       >
                                         <MenuItem value="">
                                           <em>None</em>
@@ -855,7 +893,13 @@ export default function AgentManagement() {
                                         id="outlined-basic"
                                         label="Email Address"
                                         variant="outlined"
-                                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                                        sx={{
+                                          mt: 1,
+                                          mb: 1,
+                                          width: "100%",
+                                          background:
+                                            "rgba(239, 241, 249, 0.6)",
+                                        }}
                                       />
                                     </Box>
 
@@ -864,7 +908,13 @@ export default function AgentManagement() {
                                         id="outlined-basic"
                                         label="Address"
                                         variant="outlined"
-                                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                                        sx={{
+                                          mt: 1,
+                                          mb: 1,
+                                          width: "100%",
+                                          background:
+                                            "rgba(239, 241, 249, 0.6)",
+                                        }}
                                       />
                                     </Box>
 
@@ -873,7 +923,13 @@ export default function AgentManagement() {
                                         id="outlined-basic"
                                         label="Address 2"
                                         variant="outlined"
-                                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                                        sx={{
+                                          mt: 1,
+                                          mb: 1,
+                                          width: "100%",
+                                          background:
+                                            "rgba(239, 241, 249, 0.6)",
+                                        }}
                                       />
                                     </Box>
 
@@ -889,6 +945,10 @@ export default function AgentManagement() {
                                         value={time}
                                         label="City"
                                         onChange={handleChange}
+                                        sx={{
+                                          background:
+                                            "rgba(239, 241, 249, 0.6)",
+                                        }}
                                       >
                                         <MenuItem value="">
                                           <em>None</em>
@@ -926,6 +986,7 @@ export default function AgentManagement() {
                           pl: 5,
                           pr: 5,
                           borderRadius: "8px",
+                          boxShadow: "none",
                         }}
                         variant="outlined"
                       >
@@ -941,6 +1002,7 @@ export default function AgentManagement() {
                           pl: 5,
                           pr: 5,
                           borderRadius: "8px",
+                          boxShadow: "none",
                         }}
                         variant="contained"
                       >
@@ -987,7 +1049,7 @@ export default function AgentManagement() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -999,6 +1061,10 @@ export default function AgentManagement() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>
@@ -1113,7 +1179,7 @@ export default function AgentManagement() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -1125,6 +1191,10 @@ export default function AgentManagement() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>

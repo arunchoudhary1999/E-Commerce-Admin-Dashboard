@@ -396,7 +396,8 @@ function ModalTable(props) {
                 display: "flex",
                 alignItems: "center",
                 width: 250,
-                border: "1px solid grey",
+                border: "1px solid lightgray",
+                boxShadow: "none",
               }}
             >
               <InputBase
@@ -518,7 +519,7 @@ export default function EnhancedTable() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Paper sx={{ width: "100%", mb: 2 }}>
+      <Paper sx={{ width: "100%", mb: 2, borderRadius: "8px" }}>
         <ModalTable numSelected={selected.length} />
         <TableContainer>
           <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle">

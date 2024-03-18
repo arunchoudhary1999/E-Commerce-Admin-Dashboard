@@ -39,7 +39,7 @@ const CardChartSix = () => {
           </Typography>
 
           <FormControl
-            sx={{ m: 1, minWidth: 120, alignSelf: "flex-start" }}
+            sx={{ m: 1, minWidth: 90, alignSelf: "flex-start" }}
             size="small"
           >
             <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -49,6 +49,10 @@ const CardChartSix = () => {
               value={time}
               label="Time"
               onChange={handleChange}
+              sx={{
+                boxShadow: "none",
+                ".MuiOutlinedInput-notchedOutline": { border: 0 },
+              }}
             >
               <MenuItem value="">
                 <em>None</em>
@@ -77,25 +81,30 @@ const CardChartSix = () => {
               paddingBottom: "10px",
               marginTop: "10px",
               marginBottom: "10px",
-              justifyContent: "space-evenly",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
+              // justifyContent: "space-evenly",
+              boxShadow: "rgba(34, 34, 34, 0.1) 0px 8px 15px 0px;",
+              // boxShadow:
+              //   "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
             }}
           >
-            <Typography
-              variant="h6"
-              sx={{ color: "#F58634", fontSize: "15px" }}
-            >
-              160
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: "15px",
-              }}
-            >
-              All
-            </Typography>
+            <Box sx={{ width: "40%", textAlign: "center" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#F58634", fontSize: "15px" }}
+              >
+                160
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: "15px",
+                }}
+              >
+                All
+              </Typography>
+            </Box>
           </Box>
           <Box
             sx={{
@@ -106,25 +115,28 @@ const CardChartSix = () => {
               marginBottom: "10px",
               paddingTop: "10px",
               paddingBottom: "10px",
-              justifyContent: "space-evenly",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
+              // justifyContent: "space-evenly",
+              boxShadow: "rgba(34, 34, 34, 0.1) 0px 8px 15px 0px;",
             }}
           >
-            <Typography
-              variant="h6"
-              sx={{ color: "#F58634", fontSize: "15px" }}
-            >
-              40
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: "15px",
-              }}
-            >
-              Pending
-            </Typography>
+            <Box sx={{ width: "40%", textAlign: "center" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#F58634", fontSize: "15px" }}
+              >
+                40
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: "15px",
+                }}
+              >
+                Pending
+              </Typography>
+            </Box>
           </Box>
           <Box
             sx={{
@@ -135,25 +147,28 @@ const CardChartSix = () => {
               paddingBottom: "10px",
               marginTop: "10px",
               marginBottom: "10px",
-              justifyContent: "space-evenly",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
+              // justifyContent: "space-evenly",
+              boxShadow: "rgba(34, 34, 34, 0.1) 0px 8px 15px 0px;",
             }}
           >
-            <Typography
-              variant="h6"
-              sx={{ color: "#F58634", fontSize: "15px" }}
-            >
-              120
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: "15px",
-              }}
-            >
-              Confirmed
-            </Typography>
+            <Box sx={{ width: "40%", textAlign: "center" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#F58634", fontSize: "15px" }}
+              >
+                120
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: "15px",
+                }}
+              >
+                Confirmed
+              </Typography>
+            </Box>
           </Box>
           <Box
             sx={{
@@ -164,25 +179,28 @@ const CardChartSix = () => {
               paddingBottom: "10px",
               marginTop: "10px",
               marginBottom: "10px",
-              justifyContent: "space-evenly",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
+              // justifyContent: "space-evenly",
+              boxShadow: "rgba(34, 34, 34, 0.1) 0px 8px 15px 0px;",
             }}
           >
-            <Typography
-              variant="h6"
-              sx={{ color: "#F58634", fontSize: "15px" }}
-            >
-              60
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: "15px",
-              }}
-            >
-              In packing
-            </Typography>
+            <Box sx={{ width: "40%", textAlign: "center" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#F58634", fontSize: "15px" }}
+              >
+                60
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: "15px",
+                }}
+              >
+                In packing
+              </Typography>
+            </Box>
           </Box>
           <Box
             sx={{
@@ -193,25 +211,28 @@ const CardChartSix = () => {
               paddingBottom: "10px",
               marginTop: "10px",
               marginBottom: "10px",
-              justifyContent: "space-evenly",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
+              // justifyContent: "space-evenly",
+              boxShadow: "rgba(34, 34, 34, 0.1) 0px 8px 15px 0px;",
             }}
           >
-            <Typography
-              variant="h6"
-              sx={{ color: "#F58634", fontSize: "15px" }}
-            >
-              140
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: "15px",
-              }}
-            >
-              Dispatched
-            </Typography>
+            <Box sx={{ width: "40%", textAlign: "center" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#F58634", fontSize: "15px" }}
+              >
+                140
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: "15px",
+                }}
+              >
+                Dispatched
+              </Typography>
+            </Box>
           </Box>
           <Box
             sx={{
@@ -222,84 +243,28 @@ const CardChartSix = () => {
               marginBottom: "10px",
               paddingTop: "10px",
               paddingBottom: "10px",
-              justifyContent: "space-evenly",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
+              // justifyContent: "space-evenly",
+              boxShadow: "rgba(34, 34, 34, 0.1) 0px 8px 15px 0px;",
             }}
           >
-            <Typography
-              variant="h6"
-              sx={{ color: "#F58634", fontSize: "15px" }}
-            >
-              100
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: "15px",
-              }}
-            >
-              Delivered
-            </Typography>
-          </Box>
-
-          <Box
-            sx={{
-              borderRadius: "15px",
-              display: "flex",
-              width: "45%",
-              marginTop: "10px",
-              paddingTop: "10px",
-              paddingBottom: "10px",
-              marginBottom: "10px",
-              justifyContent: "space-evenly",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
-            }}
-          >
-            <Typography
-              variant="h6"
-              sx={{ color: "#F58634", fontSize: "15px" }}
-            >
-              160
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: "15px",
-              }}
-            >
-              Cancelled
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              borderRadius: "15px",
-              display: "flex",
-              width: "45%",
-              marginTop: "10px",
-              paddingTop: "10px",
-              paddingBottom: "10px",
-              marginBottom: "10px",
-              justifyContent: "space-evenly",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
-            }}
-          >
-            <Typography
-              variant="h6"
-              sx={{ color: "#F58634", fontSize: "15px" }}
-            >
-              160
-            </Typography>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: "15px",
-              }}
-            >
-              Checkout
-            </Typography>
+            <Box sx={{ width: "40%", textAlign: "center" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#F58634", fontSize: "15px" }}
+              >
+                100
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: "15px",
+                }}
+              >
+                Delivered
+              </Typography>
+            </Box>
           </Box>
 
           <Box
@@ -311,20 +276,93 @@ const CardChartSix = () => {
               paddingTop: "10px",
               paddingBottom: "10px",
               marginBottom: "10px",
-              justifyContent: "space-evenly",
-              boxShadow:
-                "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;",
+              // justifyContent: "space-evenly",
+              boxShadow: "rgba(34, 34, 34, 0.1) 0px 8px 15px 0px;",
             }}
           >
-            <Typography
-              variant="h6"
-              sx={{ color: "#F58634", fontSize: "15px" }}
-            >
-              110
-            </Typography>
-            <Typography variant="h6" sx={{ fontSize: "15px" }}>
-              Cancel Request
-            </Typography>
+            <Box sx={{ width: "40%", textAlign: "center" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#F58634", fontSize: "15px" }}
+              >
+                160
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: "15px",
+                }}
+              >
+                Cancelled
+              </Typography>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              borderRadius: "15px",
+              display: "flex",
+              width: "45%",
+              marginTop: "10px",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              marginBottom: "10px",
+              // justifyContent: "space-evenly",
+              boxShadow: "rgba(34, 34, 34, 0.1) 0px 8px 15px 0px;",
+            }}
+          >
+            <Box sx={{ width: "40%", textAlign: "center" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#F58634", fontSize: "15px" }}
+              >
+                160
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: "15px",
+                }}
+              >
+                Checkout
+              </Typography>
+            </Box>
+          </Box>
+
+          <Box
+            sx={{
+              borderRadius: "15px",
+              display: "flex",
+              width: "45%",
+              marginTop: "10px",
+              paddingTop: "10px",
+              paddingBottom: "10px",
+              marginBottom: "10px",
+              // justifyContent: "space-evenly",
+              boxShadow: "rgba(34, 34, 34, 0.1) 0px 8px 15px 0px;",
+            }}
+          >
+            <Box sx={{ width: "40%", textAlign: "center" }}>
+              <Typography
+                variant="h6"
+                sx={{ color: "#F58634", fontSize: "15px" }}
+              >
+                110
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                variant="h6"
+                sx={{
+                  fontSize: "15px",
+                }}
+              >
+                Cancel Req
+              </Typography>
+            </Box>
           </Box>
         </div>
       </div>

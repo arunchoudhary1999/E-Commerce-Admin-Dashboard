@@ -59,7 +59,11 @@ export default function OrderManagement() {
           >
             <Button
               onClick={functionopenpopup}
-              sx={{ background: "#F58634", borderRadius: "8px" }}
+              sx={{
+                background: "#F58634",
+                borderRadius: "8px",
+                boxShadow: "none",
+              }}
               variant="contained"
             >
               Order Summary
@@ -174,6 +178,7 @@ export default function OrderManagement() {
                             background: "#ffeb99",
                             padding: "0 8px",
                             textTransform: "lowercase",
+                            boxShadow: "none",
                           }}
                         >
                           Pending
@@ -322,13 +327,17 @@ export default function OrderManagement() {
               <DialogActions>
                 <Button
                   onClick={closepopup}
-                  sx={{ background: "#F58634", borderRadius: "8px" }}
+                  sx={{
+                    background: "#F58634",
+                    borderRadius: "8px",
+                    boxShadow: "none",
+                  }}
                   variant="contained"
                 >
                   Mark is Complete | <KeyboardArrowDownIcon />
                 </Button>
                 <Button
-                  sx={{ borderRadius: "8px" }}
+                  sx={{ borderRadius: "8px", boxShadow: "none" }}
                   onClick={closepopup}
                   color="error"
                   variant="contained"
@@ -339,7 +348,11 @@ export default function OrderManagement() {
             </Dialog>
 
             <Button
-              sx={{ background: "#F58634", borderRadius: "8px" }}
+              sx={{
+                background: "#F58634",
+                borderRadius: "8px",
+                boxShadow: "none",
+              }}
               variant="contained"
             >
               <AddIcon />
@@ -374,7 +387,7 @@ export default function OrderManagement() {
                 }}
               />
               <FormControl
-                sx={{ m: 1, minWidth: 120, alignSelf: "flex-start" }}
+                sx={{ m: 1, minWidth: 90, alignSelf: "flex-start" }}
                 size="small"
               >
                 <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -384,6 +397,10 @@ export default function OrderManagement() {
                   value={time}
                   label="Time"
                   onChange={handleChange}
+                  sx={{
+                    boxShadow: "none",
+                    ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                  }}
                 >
                   <MenuItem value="">
                     <em>None</em>
@@ -445,7 +462,7 @@ export default function OrderManagement() {
                 }}
               />
               <FormControl
-                sx={{ m: 1, minWidth: 120, alignSelf: "flex-start" }}
+                sx={{ m: 1, minWidth: 90, alignSelf: "flex-start" }}
                 size="small"
               >
                 <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -455,6 +472,10 @@ export default function OrderManagement() {
                   value={time}
                   label="Time"
                   onChange={handleChange}
+                  sx={{
+                    boxShadow: "none",
+                    ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                  }}
                 >
                   <MenuItem value="">
                     <em>None</em>
@@ -525,7 +546,7 @@ export default function OrderManagement() {
                 }}
               />
               <FormControl
-                sx={{ m: 1, minWidth: 120, alignSelf: "flex-start" }}
+                sx={{ m: 1, minWidth: 90, alignSelf: "flex-start" }}
                 size="small"
               >
                 <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -535,6 +556,10 @@ export default function OrderManagement() {
                   value={time}
                   label="Time"
                   onChange={handleChange}
+                  sx={{
+                    boxShadow: "none",
+                    ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                  }}
                 >
                   <MenuItem value="">
                     <em>None</em>

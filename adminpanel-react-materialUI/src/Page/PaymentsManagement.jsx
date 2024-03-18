@@ -51,7 +51,11 @@ export default function PaymentsManagement() {
             <Box>
               <Button
                 onClick={functionopenpopup}
-                sx={{ background: "#F58634", borderRadius: "8px" }}
+                sx={{
+                  background: "#F58634",
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 variant="contained"
               >
                 Payment Summary
@@ -169,6 +173,7 @@ export default function PaymentsManagement() {
                               padding: "0 8px",
                               textTransform: "lowercase",
                               borderRadius: "8px",
+                              boxShadow: "none",
                             }}
                           >
                             Pending
@@ -490,6 +495,7 @@ export default function PaymentsManagement() {
                       borderColor: "red",
                       color: "red",
                       borderRadius: "8px",
+                      boxShadow: "none",
                     }}
                     variant="outlined"
                   >
@@ -502,6 +508,7 @@ export default function PaymentsManagement() {
                       borderColor: "red",
                       color: "red",
                       borderRadius: "8px",
+                      boxShadow: "none",
                     }}
                     variant="outlined"
                   >
@@ -513,6 +520,7 @@ export default function PaymentsManagement() {
                     variant="contained"
                     sx={{
                       borderRadius: "8px",
+                      boxShadow: "none",
                     }}
                   >
                     Close Order
@@ -556,7 +564,7 @@ export default function PaymentsManagement() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -568,6 +576,10 @@ export default function PaymentsManagement() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>
@@ -655,7 +667,7 @@ export default function PaymentsManagement() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -667,6 +679,10 @@ export default function PaymentsManagement() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>

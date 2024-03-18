@@ -395,7 +395,8 @@ function UserManagementDetailsTable(props) {
                 display: "flex",
                 alignItems: "center",
                 width: 250,
-                border: "1px solid grey",
+                border: "1px solid lightgray",
+                boxShadow: "none",
               }}
             >
               <InputBase
@@ -420,6 +421,7 @@ function UserManagementDetailsTable(props) {
                 color: "black",
                 p: "4.8px 15px",
                 mr: 1.5,
+                boxShadow: "none",
               }}
               startIcon={<CalendarMonthIcon />}
             >
@@ -517,7 +519,7 @@ export default function EnhancedTable() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Paper sx={{ width: "100%", mb: 2 }}>
+      <Paper sx={{ width: "100%", mb: 2, borderRadius: "8px" }}>
         <UserManagementDetailsTable numSelected={selected.length} />
         <TableContainer>
           <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle">

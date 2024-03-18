@@ -68,7 +68,13 @@ const CustomersVsDate = () => {
               <Typography variant="h5">Orders Vs Date</Typography>
             </Box>
             <Button
-              sx={{ mt: 1.3, mb: 1.3, minWidth: 250, background: "red" }}
+              sx={{
+                mt: 1.3,
+                mb: 1.3,
+                minWidth: 250,
+                background: "red",
+                boxShadow: "none",
+              }}
               variant="contained"
             >
               <DownloadIcon />
@@ -91,7 +97,7 @@ const CustomersVsDate = () => {
               }}
             >
               <FormControl
-                sx={{ m: 1, minWidth: 120, alignSelf: "flex-start" }}
+                sx={{ m: 1, minWidth: 90, alignSelf: "flex-start" }}
                 size="small"
               >
                 <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -101,6 +107,10 @@ const CustomersVsDate = () => {
                   value={time}
                   label="Time"
                   onChange={handleChange}
+                  sx={{
+                    boxShadow: "none",
+                    ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                  }}
                 >
                   <MenuItem value="">
                     <em>None</em>

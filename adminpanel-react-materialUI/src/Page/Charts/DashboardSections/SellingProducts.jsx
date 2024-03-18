@@ -377,7 +377,11 @@ export default function EnhancedTable() {
                 </Select>
               </FormControl>
               <Button
-                sx={{ background: "#F58634", borderRadius: "8px" }}
+                sx={{
+                  background: "#F58634",
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 variant="contained"
               >
                 <DownloadIcon />
@@ -389,7 +393,7 @@ export default function EnhancedTable() {
       </Box>
       <Box sx={{ width: "100%", mb: 2 }} className="boxShadow">
         {/* <ProductManagementTable numSelected={selected.length} /> */}
-        <TableContainer>
+        <TableContainer sx={{ borderRadius: "8px" }}>
           <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle">
             <EnhancedTableHead
               numSelected={selected.length}
@@ -454,17 +458,17 @@ export default function EnhancedTable() {
             </TableBody>
           </Table>
         </TableContainer>
-        <TablePagination
-          rowsPerPageOptions={[5, 10, 25]}
-          component="div"
-          count={rows.length}
-          rowsPerPage={rowsPerPage}
-          page={page}
-          onPageChange={handleChangePage}
-          onRowsPerPageChange={handleChangeRowsPerPage}
-          sx={{ mr: 5 }}
-        />
       </Box>
+      <TablePagination
+        rowsPerPageOptions={[5, 10, 25]}
+        component="div"
+        count={rows.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onPageChange={handleChangePage}
+        onRowsPerPageChange={handleChangeRowsPerPage}
+        sx={{ display: "flex", justifyContent: "center" }}
+      />
     </Box>
   );
 }

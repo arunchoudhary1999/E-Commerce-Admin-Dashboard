@@ -61,7 +61,12 @@ export default function AddProduct() {
 
             <Box>
               <Button
-                sx={{ background: "black", mr: 2, borderRadius: "8px" }}
+                sx={{
+                  background: "black",
+                  mr: 2,
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 variant="contained"
               >
                 Save as Draft
@@ -69,7 +74,11 @@ export default function AddProduct() {
               </Button>
 
               <Button
-                sx={{ background: "#F58634", borderRadius: "8px" }}
+                sx={{
+                  background: "#F58634",
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 variant="contained"
               >
                 Save & Publish
@@ -105,7 +114,12 @@ export default function AddProduct() {
                         id="outlined-basic"
                         label="Product Name"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "100%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                     <Box>
@@ -119,6 +133,9 @@ export default function AddProduct() {
                           value={time}
                           label="Time"
                           onChange={handleChange}
+                          sx={{
+                            background: "rgba(239, 241, 249, 0.6)",
+                          }}
                         >
                           <MenuItem value="">
                             <em>None</em>
@@ -136,13 +153,23 @@ export default function AddProduct() {
                         id="outlined-basic"
                         label="Selling Price"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                       <TextField
                         id="outlined-basic"
                         label="Cost Price"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                     <Box>
@@ -156,6 +183,9 @@ export default function AddProduct() {
                           value={time}
                           label="Time"
                           onChange={handleChange}
+                          sx={{
+                            background: "rgba(239, 241, 249, 0.6)",
+                          }}
                         >
                           <MenuItem value="">
                             <em>None</em>
@@ -217,6 +247,9 @@ export default function AddProduct() {
                           value={time}
                           label="Time"
                           onChange={handleChange}
+                          sx={{
+                            background: "rgba(239, 241, 249, 0.6)",
+                          }}
                         >
                           <MenuItem value="">
                             <em>None</em>
@@ -233,7 +266,12 @@ export default function AddProduct() {
                         id="outlined-basic"
                         label="Cost Price"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                     <Box
@@ -277,7 +315,12 @@ export default function AddProduct() {
                         type="date"
                         id="outlined-basic"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "100%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                   </Box>
@@ -299,6 +342,9 @@ export default function AddProduct() {
                           label="Short Description"
                           multiline
                           rows={4}
+                          sx={{
+                            background: "rgba(239, 241, 249, 0.6)",
+                          }}
                         />
                       </div>
                     </Box>
@@ -339,6 +385,9 @@ export default function AddProduct() {
                                 value={time}
                                 label="Time"
                                 onChange={handleChange}
+                                sx={{
+                                  background: "rgba(239, 241, 249, 0.6)",
+                                }}
                               >
                                 <MenuItem value="">
                                   <em>None</em>
@@ -365,6 +414,9 @@ export default function AddProduct() {
                                 value={time}
                                 label="Time"
                                 onChange={handleChange}
+                                sx={{
+                                  background: "rgba(239, 241, 249, 0.6)",
+                                }}
                               >
                                 <MenuItem value="">
                                   <em>None</em>
@@ -425,6 +477,9 @@ export default function AddProduct() {
                           label="Your text goes here"
                           multiline
                           rows={4}
+                          sx={{
+                            background: "rgba(239, 241, 249, 0.6)",
+                          }}
                         />
                         <InputLabel
                           id="demo-select-small-label"
@@ -477,13 +532,23 @@ export default function AddProduct() {
                         type="date"
                         id="outlined-basic"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                       <TextField
                         type="time"
                         id="outlined-basic"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                     {/* End Box */}

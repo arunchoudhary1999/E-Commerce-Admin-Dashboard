@@ -32,14 +32,22 @@ export default function InventoryManagement() {
               }}
             >
               <Button
-                sx={{ background: "#F58634", borderRadius: "8px" }}
+                sx={{
+                  background: "#F58634",
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 variant="contained"
               >
                 Inventory Management
               </Button>
 
               <Button
-                sx={{ background: "#F58634", borderRadius: "8px" }}
+                sx={{
+                  background: "#F58634",
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 variant="contained"
               >
                 <AddIcon sx={{ mr: 1 }} />
@@ -81,7 +89,7 @@ export default function InventoryManagement() {
                         borderRadius: "10px",
                       }}
                     />
-                    <FormControl
+                    {/* <FormControl
                       sx={{ minWidth: 100, alignSelf: "flex-start" }}
                       size="small"
                     >
@@ -102,7 +110,7 @@ export default function InventoryManagement() {
                         <MenuItem value={30}>Monthly</MenuItem>
                         <MenuItem value={365}>Yearly</MenuItem>
                       </Select>
-                    </FormControl>
+                    </FormControl> */}
                   </Box>
                   <Box
                     sx={{
@@ -176,7 +184,7 @@ export default function InventoryManagement() {
                       }}
                     />
                     <FormControl
-                      sx={{ minWidth: 100, alignSelf: "flex-start" }}
+                      sx={{ minWidth: 90, alignSelf: "flex-start" }}
                       size="small"
                     >
                       <InputLabel id="demo-select-small-label">
@@ -188,6 +196,10 @@ export default function InventoryManagement() {
                         value={time}
                         label="Time"
                         onChange={handleChange}
+                        sx={{
+                          boxShadow: "none",
+                          ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                        }}
                       >
                         <MenuItem value="">
                           <em>None</em>

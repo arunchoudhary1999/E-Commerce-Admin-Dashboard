@@ -156,23 +156,30 @@ const CustomersOrders = () => {
               Top Customers by Orders
             </Typography>
           </Box>
-          <FormControl sx={{ m: 1, minWidth: 250 }} size="small">
-            <InputLabel id="demo-select-small-label">Today</InputLabel>
-            <Select
-              labelId="demo-select-small-label"
-              id="demo-select-small"
-              value={time}
-              label="Time"
-              onChange={handleChange}
-            >
-              <MenuItem value="">
-                <em>None</em>
-              </MenuItem>
-              <MenuItem value={7}>Weekly</MenuItem>
-              <MenuItem value={30}>Monthly</MenuItem>
-              <MenuItem value={365}>Yearly</MenuItem>
-            </Select>
-          </FormControl>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <FormControl sx={{ m: 1, minWidth: 90 }} size="small">
+              <InputLabel id="demo-select-small-label">Today</InputLabel>
+              <Select
+                labelId="demo-select-small-label"
+                id="demo-select-small"
+                value={time}
+                label="Time"
+                onChange={handleChange}
+                sx={{
+                  boxShadow: "none",
+                  ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                }}
+              >
+                <MenuItem value="">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value={7}>Weekly</MenuItem>
+                <MenuItem value={30}>Monthly</MenuItem>
+                <MenuItem value={365}>Yearly</MenuItem>
+              </Select>
+            </FormControl>
+            <DownloadIcon sx={{ color: "#F58634" }} />
+          </Box>
         </Box>
 
         <Box
@@ -264,13 +271,27 @@ const CustomersOrders = () => {
               Orders Vs Date
             </Typography>
           </Box>
-          <Button
+          {/* <Button
             sx={{
               mt: 1.3,
               mb: 1.3,
               minWidth: 250,
               background: "#F58634",
               borderRadius: "8px",
+              boxShadow: "none",
+            }}
+            variant="contained"
+          >
+            <DownloadIcon />
+            Download to Excel
+          </Button> */}
+          <Button
+            sx={{
+              mt: 1.3,
+              mb: 1.3,
+              background: "#F58634",
+              borderRadius: "8px",
+              boxShadow: "none",
             }}
             variant="contained"
           >
@@ -294,7 +315,7 @@ const CustomersOrders = () => {
             }}
           >
             <FormControl
-              sx={{ m: 1, minWidth: 120, alignSelf: "flex-start" }}
+              sx={{ m: 1, minWidth: 90, alignSelf: "flex-start" }}
               size="small"
             >
               <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -304,6 +325,10 @@ const CustomersOrders = () => {
                 value={time}
                 label="Time"
                 onChange={handleChange}
+                sx={{
+                  boxShadow: "none",
+                  ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                }}
               >
                 <MenuItem value="">
                   <em>None</em>

@@ -69,7 +69,7 @@ const PieChartThree = () => {
           </Typography>
 
           <FormControl
-            sx={{ m: 1, minWidth: 120, alignSelf: "flex-start" }}
+            sx={{ m: 1, minWidth: 90, alignSelf: "flex-start" }}
             size="small"
           >
             <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -79,6 +79,10 @@ const PieChartThree = () => {
               value={time}
               label="Time"
               onChange={handleChange}
+              sx={{
+                boxShadow: "none",
+                ".MuiOutlinedInput-notchedOutline": { border: 0 },
+              }}
             >
               <MenuItem value="">
                 <em>None</em>

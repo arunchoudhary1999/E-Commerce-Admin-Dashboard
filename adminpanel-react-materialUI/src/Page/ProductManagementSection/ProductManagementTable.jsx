@@ -442,6 +442,7 @@ function ProductManagementTable(props) {
                 color: "black",
                 p: "4.8px 15px",
                 mr: 1.5,
+                boxShadow: "none",
               }}
               startIcon={<CalendarMonthIcon />}
             >
@@ -539,7 +540,7 @@ export default function EnhancedTable() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Paper sx={{ width: "100%", mb: 2 }}>
+      <Paper sx={{ width: "100%", mb: 2, borderRadius: "8px" }}>
         <ProductManagementTable numSelected={selected.length} />
         <TableContainer>
           <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle">

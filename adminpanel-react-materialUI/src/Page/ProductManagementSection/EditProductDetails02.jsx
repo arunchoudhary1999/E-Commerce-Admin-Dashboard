@@ -85,7 +85,12 @@ export default function EditProductDetails() {
 
             <Box>
               <Button
-                sx={{ background: "black", mr: 2, borderRadius: "8px" }}
+                sx={{
+                  background: "black",
+                  mr: 2,
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 variant="contained"
               >
                 Save as Draft
@@ -93,7 +98,11 @@ export default function EditProductDetails() {
               </Button>
 
               <Button
-                sx={{ background: "#F58634", borderRadius: "8px" }}
+                sx={{
+                  background: "#F58634",
+                  borderRadius: "8px",
+                  boxShadow: "none",
+                }}
                 variant="contained"
               >
                 <ListItem disablePadding>Save & Publish</ListItem>
@@ -129,7 +138,12 @@ export default function EditProductDetails() {
                         id="outlined-basic"
                         value="SAMSUNG 8 kg 5 Star Inverter Fully Auto..."
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "100%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                     <Box>
@@ -139,6 +153,9 @@ export default function EditProductDetails() {
                           id="demo-select-small"
                           value={time}
                           onChange={handleChange}
+                          sx={{
+                            background: "rgba(239, 241, 249, 0.6)",
+                          }}
                         >
                           <MenuItem value="">
                             <em>None</em>
@@ -156,17 +173,34 @@ export default function EditProductDetails() {
                         id="outlined-basic"
                         value="$22.00"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                       <TextField
                         id="outlined-basic"
                         value="$18.00"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                     <Box>
-                      <FormControl sx={{ mt: 1, mb: 1, width: "100%" }}>
+                      <FormControl
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "100%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
+                      >
                         <Select
                           labelId="demo-select-small-label"
                           id="demo-select-small"
@@ -229,6 +263,9 @@ export default function EditProductDetails() {
                           id="demo-select-small"
                           value={typeTime}
                           onChange={typeHandleChange}
+                          sx={{
+                            background: "rgba(239, 241, 249, 0.6)",
+                          }}
                         >
                           <MenuItem value="">
                             <em>None</em>
@@ -245,7 +282,12 @@ export default function EditProductDetails() {
                         id="outlined-basic"
                         value="4,599.00"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                     <Box
@@ -290,7 +332,12 @@ export default function EditProductDetails() {
                         id="outlined-basic"
                         value="03/01/2024"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "100%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "100%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                   </Box>
@@ -313,6 +360,9 @@ export default function EditProductDetails() {
                           value="Short Description Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
                           multiline
                           rows={4}
+                          sx={{
+                            background: "rgba(239, 241, 249, 0.6)",
+                          }}
                         />
                       </div>
                     </Box>
@@ -349,6 +399,9 @@ export default function EditProductDetails() {
                                 id="demo-select-small"
                                 value={product01Time}
                                 onChange={product01handleChange}
+                                sx={{
+                                  background: "rgba(239, 241, 249, 0.6)",
+                                }}
                               >
                                 <MenuItem value="">
                                   <em>None</em>
@@ -371,6 +424,9 @@ export default function EditProductDetails() {
                                 id="demo-select-small"
                                 value={product02Time}
                                 onChange={product02handleChange}
+                                sx={{
+                                  background: "rgba(239, 241, 249, 0.6)",
+                                }}
                               >
                                 <MenuItem value="">
                                   <em>None</em>
@@ -431,6 +487,9 @@ export default function EditProductDetails() {
                           value="Short Description Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
                           multiline
                           rows={4}
+                          sx={{
+                            background: "rgba(239, 241, 249, 0.6)",
+                          }}
                         />
                         <InputLabel
                           id="demo-select-small-label"
@@ -483,13 +542,23 @@ export default function EditProductDetails() {
                         type="date"
                         id="outlined-basic"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                       <TextField
                         type="time"
                         id="outlined-basic"
                         variant="outlined"
-                        sx={{ mt: 1, mb: 1, width: "48%" }}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "48%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
                       />
                     </Box>
                     {/* End Box */}
@@ -801,8 +870,9 @@ export default function EditProductDetails() {
                     >
                       <ImageIcon
                         sx={{
-                          color: "blue",
+                          // color: "blue",
                           fontSize: "35px",
+                          color: " rgba(245, 134, 52, 1)",
                         }}
                       />
                       <Box
@@ -821,9 +891,11 @@ export default function EditProductDetails() {
                           startIcon={<CloudUploadIcon />}
                           sx={{
                             background: "none",
+                            color: " rgba(245, 134, 52, 1)",
+
                             border: "none",
                             boxShadow: "none",
-                            color: "blue",
+                            // color: "blue",
                             textTransform: "lowercase",
                             mb: 1,
                             fontSize: "9px",

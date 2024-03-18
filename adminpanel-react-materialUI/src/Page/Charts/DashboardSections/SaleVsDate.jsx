@@ -173,13 +173,27 @@ const SaleVsDate = () => {
                 Sales Vs Date
               </Typography>
             </Box>
-            <Button
+            {/* <Button
               sx={{
                 mt: 1.3,
                 mb: 1.3,
                 minWidth: 250,
                 background: "#F58634",
                 borderRadius: "8px",
+                boxShadow: "none",
+              }}
+              variant="contained"
+            >
+              <DownloadIcon />
+              Download to Excel
+            </Button> */}
+            <Button
+              sx={{
+                mt: 1.3,
+                mb: 1.3,
+                background: "#F58634",
+                borderRadius: "8px",
+                boxShadow: "none",
               }}
               variant="contained"
             >
@@ -203,7 +217,7 @@ const SaleVsDate = () => {
               }}
             >
               <FormControl
-                sx={{ m: 1, minWidth: 120, alignSelf: "flex-start" }}
+                sx={{ m: 1, minWidth: 90, alignSelf: "flex-start" }}
                 size="small"
               >
                 <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -213,6 +227,10 @@ const SaleVsDate = () => {
                   value={time}
                   label="Time"
                   onChange={handleChange}
+                  sx={{
+                    boxShadow: "none",
+                    ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                  }}
                 >
                   <MenuItem value="">
                     <em>None</em>
@@ -247,13 +265,27 @@ const SaleVsDate = () => {
                 Customers Vs Date
               </Typography>
             </Box>
-            <Button
+            {/* <Button
               sx={{
                 mt: 1.3,
                 mb: 1.3,
                 minWidth: 250,
                 background: "#F58634",
                 borderRadius: "8px",
+                boxShadow: "none",
+              }}
+              variant="contained"
+            >
+              <DownloadIcon />
+              Download to Excel
+            </Button> */}
+            <Button
+              sx={{
+                mt: 1.3,
+                mb: 1.3,
+                background: "#F58634",
+                borderRadius: "8px",
+                boxShadow: "none",
               }}
               variant="contained"
             >
@@ -277,7 +309,7 @@ const SaleVsDate = () => {
               }}
             >
               <FormControl
-                sx={{ m: 1, minWidth: 120, alignSelf: "flex-start" }}
+                sx={{ m: 1, minWidth: 90, alignSelf: "flex-start" }}
                 size="small"
               >
                 <InputLabel id="demo-select-small-label">Today</InputLabel>
@@ -287,6 +319,10 @@ const SaleVsDate = () => {
                   value={time}
                   label="Time"
                   onChange={handleChange}
+                  sx={{
+                    boxShadow: "none",
+                    ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                  }}
                 >
                   <MenuItem value="">
                     <em>None</em>

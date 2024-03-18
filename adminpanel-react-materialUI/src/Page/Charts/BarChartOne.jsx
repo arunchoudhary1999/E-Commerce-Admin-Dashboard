@@ -102,7 +102,7 @@ const BarChartOne = () => {
           <FormControl
             sx={{
               m: 1,
-              minWidth: 120,
+              minWidth: 90,
               alignSelf: "flex-start",
             }}
             size="small"
@@ -114,6 +114,10 @@ const BarChartOne = () => {
               value={time}
               label="Time"
               onChange={handleChange}
+              sx={{
+                boxShadow: "none",
+                ".MuiOutlinedInput-notchedOutline": { border: 0 },
+              }}
             >
               <MenuItem value="">
                 <em>None</em>
