@@ -250,7 +250,7 @@ function AgentModalTable(props) {
               <IconButton type="button" sx={{ p: "0px 5px" }}>
                 <SearchIcon sx={{ height: 35 }} />
               </IconButton>
-              <Divider sx={{ height: 25, m: 0.5 }} orientation="vertical" />
+              {/* <Divider sx={{ height: 25, m: 0.5 }} orientation="vertical" /> */}
             </Paper>
 
             <Button

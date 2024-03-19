@@ -26,7 +26,10 @@ import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
 function createData(
   id,
   name,
@@ -405,7 +408,7 @@ function OrderManagementTable(props) {
               <IconButton type="button" sx={{ p: "0px 5px" }}>
                 <SearchIcon sx={{ height: 35 }} />
               </IconButton>
-              <Divider sx={{ height: 25, m: 0.5 }} orientation="vertical" />
+              {/* <Divider sx={{ height: 25, m: 0.5 }} orientation="vertical" /> */}
             </Paper>
 
             <Button
@@ -455,6 +458,11 @@ export default function EnhancedTable() {
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const [time, setTime] = React.useState(3);
+
+  const thandleChange = (event) => {
+    setTime(event.target.value);
+  };
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
@@ -616,7 +624,7 @@ export default function EnhancedTable() {
                       </span>
                     </TableCell>
                     <TableCell align="right">
-                      <span
+                      {/* <span
                         style={{
                           background: "rgba(94, 99, 102, 0.08)",
 
@@ -639,7 +647,34 @@ export default function EnhancedTable() {
                           {row.vitamin}
                           <KeyboardArrowDownIcon />
                         </span>
-                      </span>
+                      </span> */}
+                      <FormControl sx={{}} size="small">
+                        <Select
+                          labelId="demo-select-small-label"
+                          id="demo-select-small"
+                          value={time}
+                          onChange={thandleChange}
+                          sx={{
+                            boxShadow: "none",
+                            ".MuiOutlinedInput-notchedOutline": { border: 0 },
+                            padding: "0",
+                            borderRadius: "7.93px",
+                            fontFamily: "Inter",
+                            height: "23.50px",
+                            fontSize: "14px",
+                            background: "rgba(94, 99, 102, 0.08)",
+
+                            color: "rgba(139, 141, 151, 1)",
+                          }}
+                        >
+                          <MenuItem value="None">
+                            <em>None</em>
+                          </MenuItem>
+                          <MenuItem value={1}>{row.suger}</MenuItem>
+                          <MenuItem value={2}>{row.protein}</MenuItem>
+                          <MenuItem value={3}>{row.vitamin}</MenuItem>
+                        </Select>
+                      </FormControl>
                     </TableCell>
                     <TableCell align="right">
                       <span
