@@ -392,7 +392,9 @@ export default function EnhancedTable() {
                   >
                     <TableCell padding="checkbox">
                       <Checkbox
-                        color="primary"
+                        sx={{
+                          color: "#6E7079",
+                        }}
                         checked={isItemSelected}
                         inputProps={{
                           "aria-labelledby": labelId,
@@ -404,13 +406,44 @@ export default function EnhancedTable() {
                       id={labelId}
                       scope="row"
                       padding="none"
+                      sx={{
+                        color: "#6E7079",
+                      }}
                     >
                       {row.name}
                     </TableCell>
-                    <TableCell align="right">{row.calories}</TableCell>
-                    <TableCell align="right">{row.fat}</TableCell>
-                    <TableCell align="right">{row.carbs}</TableCell>
-                    <TableCell align="right">{row.protein}</TableCell>
+                    <TableCell
+                      align="right"
+                      sx={{
+                        color: "#6E7079",
+                      }}
+                    >
+                      {row.calories}
+                    </TableCell>
+                    <TableCell
+                      align="right"
+                      sx={{
+                        color: "#6E7079",
+                      }}
+                    >
+                      {row.fat}
+                    </TableCell>
+                    <TableCell
+                      align="right"
+                      sx={{
+                        color: "#6E7079",
+                      }}
+                    >
+                      {row.carbs}
+                    </TableCell>
+                    <TableCell
+                      align="right"
+                      sx={{
+                        color: "#6E7079",
+                      }}
+                    >
+                      {row.protein}
+                    </TableCell>
                     <TableCell align="right">
                       <span
                         style={{
