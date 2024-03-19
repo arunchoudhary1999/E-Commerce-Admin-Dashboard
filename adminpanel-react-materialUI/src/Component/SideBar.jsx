@@ -145,9 +145,16 @@ export default function SideBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography
+            variant="h6"
+            sx={{ width: "100%" }}
+            noWrap
+            component="div"
+          >
             <Box
               sx={{
+                width: "auto",
+                float: "right",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
@@ -172,12 +179,12 @@ export default function SideBar() {
                 />
                 <IconButton
                   type="button"
-                  sx={{ p: "10px" }}
+                  sx={{ p: "10px", color: "#F58634" }}
                   aria-label="search"
                 >
                   <SearchIcon />
                 </IconButton>
-                <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
+                {/* <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" /> */}
               </Paper>
 
               <Button
@@ -187,10 +194,11 @@ export default function SideBar() {
                 tabIndex={-1}
                 sx={{
                   background: "#F58634",
-                  p: "10px 15px",
+                  padding: "10px 20px 10px 20px",
                   mr: 1.5,
                   borderRadius: "8px",
                   boxShadow: "none",
+                  textTransform: "initial",
                 }}
                 startIcon={<StorefrontIcon />}
               >
@@ -213,6 +221,7 @@ export default function SideBar() {
                   style={{
                     padding: "0px 10px",
                     color: "black",
+                    textTransform: "initial",
                   }}
                 >
                   Arun Choudhary

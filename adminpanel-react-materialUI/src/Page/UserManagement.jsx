@@ -59,8 +59,13 @@ export default function UserManagement() {
               <Button
                 sx={{
                   background: "#F58634",
-                  borderRadius: "8px",
+                  borderRadius: "12px",
+                  height: "45px",
+                  fontSize: "15.64px",
                   boxShadow: "none",
+                  textTransform: "initial",
+                  fontWeight: "700",
+                  padding: "17px 25px 17px 25px",
                 }}
                 variant="contained"
                 onClick={() => {
@@ -73,8 +78,13 @@ export default function UserManagement() {
               <Button
                 sx={{
                   background: "#F58634",
-                  borderRadius: "8px",
+                  borderRadius: "12px",
                   boxShadow: "none",
+                  height: "45px",
+                  fontSize: "15.64px",
+                  textTransform: "initial",
+                  fontWeight: "700",
+                  padding: "17px 25px 17px 25px",
                 }}
                 onClick={functionopenpopup}
                 variant="contained"

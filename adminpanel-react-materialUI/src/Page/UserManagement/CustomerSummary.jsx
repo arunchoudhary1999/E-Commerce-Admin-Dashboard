@@ -64,9 +64,13 @@ export default function CustomerSummary() {
                     color: "#b30000",
                     borderColor: "#b30000",
                     mr: 2,
-                    fontSize: "13px",
-                    borderRadius: "8px",
                     boxShadow: "none",
+                    borderRadius: "12px",
+                    height: "45px",
+                    fontSize: "15.64px",
+                    textTransform: "initial",
+                    fontWeight: "700",
+                    padding: "17px 16px 17px 16px",
                   }}
                   variant="outlined"
                 >
@@ -78,9 +82,13 @@ export default function CustomerSummary() {
                     color: "#b30000",
                     borderColor: "#b30000",
                     mr: 2,
-                    fontSize: "13px",
-                    borderRadius: "8px",
                     boxShadow: "none",
+                    borderRadius: "12px",
+                    height: "45px",
+                    fontSize: "15.64px",
+                    textTransform: "initial",
+                    fontWeight: "700",
+                    padding: "17px 16px 17px 16px",
                   }}
                   variant="outlined"
                 >
@@ -91,9 +99,13 @@ export default function CustomerSummary() {
                   sx={{
                     background: "#F58634",
                     mr: 2,
-                    fontSize: "13px",
-                    borderRadius: "8px",
+                    borderRadius: "12px",
                     boxShadow: "none",
+                    height: "45px",
+                    fontSize: "15.64px",
+                    textTransform: "initial",
+                    fontWeight: "700",
+                    padding: "17px 16px 17px 16px",
                   }}
                   variant="contained"
                 >
@@ -106,9 +118,13 @@ export default function CustomerSummary() {
                 <Button
                   sx={{
                     background: "#b30000",
-                    fontSize: "13px",
-                    borderRadius: "8px",
+                    borderRadius: "12px",
+                    height: "45px",
+                    fontSize: "15.64px",
                     boxShadow: "none",
+                    textTransform: "initial",
+                    fontWeight: "700",
+                    padding: "17px 20px 17px 20px",
                   }}
                   variant="contained"
                 >

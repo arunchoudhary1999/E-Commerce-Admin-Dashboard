@@ -291,7 +291,12 @@ const CustomersOrders = () => {
               mb: 1.3,
               background: "#F58634",
               borderRadius: "8px",
+              padding: "11px",
+              width: "200px",
+              fontSize: "14px",
               boxShadow: "none",
+              textTransform: "initial",
+              fontWeight: "700",
             }}
             variant="contained"
           >

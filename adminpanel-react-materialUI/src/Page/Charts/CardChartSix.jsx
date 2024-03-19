@@ -74,7 +74,7 @@ const CardChartSix = () => {
         >
           <Box
             sx={{
-              borderRadius: "15px",
+              borderRadius: "8px",
               display: "flex",
               width: "45%",
               paddingTop: "10px",
@@ -108,7 +108,7 @@ const CardChartSix = () => {
           </Box>
           <Box
             sx={{
-              borderRadius: "15px",
+              borderRadius: "8px",
               display: "flex",
               width: "45%",
               marginTop: "10px",
@@ -140,7 +140,7 @@ const CardChartSix = () => {
           </Box>
           <Box
             sx={{
-              borderRadius: "15px",
+              borderRadius: "8px",
               display: "flex",
               width: "45%",
               paddingTop: "10px",
@@ -172,7 +172,7 @@ const CardChartSix = () => {
           </Box>
           <Box
             sx={{
-              borderRadius: "15px",
+              borderRadius: "8px",
               display: "flex",
               width: "45%",
               paddingTop: "10px",
@@ -204,7 +204,7 @@ const CardChartSix = () => {
           </Box>
           <Box
             sx={{
-              borderRadius: "15px",
+              borderRadius: "8px",
               display: "flex",
               width: "45%",
               paddingTop: "10px",
@@ -236,7 +236,7 @@ const CardChartSix = () => {
           </Box>
           <Box
             sx={{
-              borderRadius: "15px",
+              borderRadius: "8px",
               display: "flex",
               width: "45%",
               marginTop: "10px",
@@ -269,7 +269,7 @@ const CardChartSix = () => {
 
           <Box
             sx={{
-              borderRadius: "15px",
+              borderRadius: "8px",
               display: "flex",
               width: "45%",
               marginTop: "10px",
@@ -301,7 +301,7 @@ const CardChartSix = () => {
           </Box>
           <Box
             sx={{
-              borderRadius: "15px",
+              borderRadius: "8px",
               display: "flex",
               width: "45%",
               marginTop: "10px",
@@ -334,7 +334,7 @@ const CardChartSix = () => {
 
           <Box
             sx={{
-              borderRadius: "15px",
+              borderRadius: "8px",
               display: "flex",
               width: "45%",
               marginTop: "10px",

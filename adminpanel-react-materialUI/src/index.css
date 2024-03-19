@@ -5,15 +5,20 @@
 
 }
 
+.css-eadtsu-MuiPaper-root-MuiAppBar-root {
+  box-shadow: 0 4px 32px 0 rgba(34, 34, 34, 0.15);
+  background: rgba(255, 255, 255, 1);
+
+}
 
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
-.boxShadow {
+.boxShado-s {
   box-shadow: 0 4px 32px 0 rgba(34, 34, 34, 0.15);
   border-radius: 8px;
 }

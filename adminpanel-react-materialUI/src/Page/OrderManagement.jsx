@@ -61,8 +61,14 @@ export default function OrderManagement() {
               onClick={functionopenpopup}
               sx={{
                 background: "#F58634",
-                borderRadius: "8px",
+                borderRadius: "12px",
+                height: "45px",
+                fontSize: "15.64px",
                 boxShadow: "none",
+                textTransform: "initial",
+                fontWeight: "700",
+                width: "161px",
+                padding: "17px 16px 17px 16px",
               }}
               variant="contained"
             >
@@ -329,15 +335,29 @@ export default function OrderManagement() {
                   onClick={closepopup}
                   sx={{
                     background: "#F58634",
-                    borderRadius: "8px",
+                    borderRadius: "12px",
                     boxShadow: "none",
+                    height: "45px",
+                    fontSize: "15.64px",
+                    textTransform: "initial",
+                    fontWeight: "700",
+                    padding: "17px 16px 17px 16px",
                   }}
                   variant="contained"
                 >
                   Mark is Complete | <KeyboardArrowDownIcon />
                 </Button>
                 <Button
-                  sx={{ borderRadius: "8px", boxShadow: "none" }}
+                  sx={{
+                    borderRadius: "12px",
+                    height: "45px",
+                    fontSize: "15.64px",
+                    boxShadow: "none",
+                    textTransform: "initial",
+                    fontWeight: "700",
+                    width: "161px",
+                    padding: "17px 16px 17px 16px",
+                  }}
                   onClick={closepopup}
                   color="error"
                   variant="contained"
@@ -350,8 +370,13 @@ export default function OrderManagement() {
             <Button
               sx={{
                 background: "#F58634",
-                borderRadius: "8px",
+                borderRadius: "12px",
                 boxShadow: "none",
+                height: "45px",
+                fontSize: "15.64px",
+                textTransform: "initial",
+                fontWeight: "700",
+                padding: "17px 16px 17px 16px",
               }}
               variant="contained"
             >

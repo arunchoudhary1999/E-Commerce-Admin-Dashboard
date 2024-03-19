@@ -90,8 +90,13 @@ export default function AgentManagement() {
               <Button
                 sx={{
                   background: "#F58634",
-                  borderRadius: "8px",
+                  borderRadius: "12px",
                   boxShadow: "none",
+                  height: "45px",
+                  fontSize: "15.64px",
+                  textTransform: "initial",
+                  fontWeight: "700",
+                  padding: "17px 25px 17px 25px",
                 }}
                 onClick={functionagentopenpopup}
                 variant="contained"
@@ -308,8 +313,13 @@ export default function AgentManagement() {
                       sx={{
                         background: "red",
                         color: "white",
-                        borderRadius: "8px",
+                        borderRadius: "12px",
+                        height: "45px",
+                        fontSize: "15.64px",
                         boxShadow: "none",
+                        textTransform: "initial",
+                        fontWeight: "700",
+                        padding: "17px 25px 17px 25px",
                       }}
                       variant="contained"
                     >
@@ -330,8 +340,13 @@ export default function AgentManagement() {
                     color: "#F58634",
                     borderColor: "#F58634",
                     mr: 2,
-                    borderRadius: "8px",
+                    borderRadius: "12px",
+                    height: "45px",
+                    fontSize: "15.64px",
                     boxShadow: "none",
+                    textTransform: "initial",
+                    fontWeight: "700",
+                    padding: "17px 16px 17px 16px",
                   }}
                   variant="outlined"
                 >
@@ -683,10 +698,15 @@ export default function AgentManagement() {
                         color: "red",
                         borderColor: "red",
                         background: "white",
-                        borderRadius: "8px",
+                        borderRadius: "12px",
+                        height: "45px",
+                        fontSize: "15.64px",
                         boxShadow: "none",
+                        textTransform: "initial",
+                        fontWeight: "700",
+                        padding: "17px 16px 17px 16px",
                       }}
-                      variant="contained"
+                      variant="outlined"
                     >
                       Reduce Limit
                     </Button>
@@ -695,8 +715,13 @@ export default function AgentManagement() {
                       color="error"
                       variant="contained"
                       sx={{
-                        borderRadius: "8px",
+                        borderRadius: "12px",
+                        height: "45px",
+                        fontSize: "15.64px",
                         boxShadow: "none",
+                        textTransform: "initial",
+                        fontWeight: "700",
+                        padding: "17px 16px 17px 16px",
                       }}
                     >
                       Suspend Member
@@ -706,8 +731,13 @@ export default function AgentManagement() {
                 <Button
                   sx={{
                     background: "#F58634",
-                    borderRadius: "8px",
+                    borderRadius: "12px",
                     boxShadow: "none",
+                    height: "45px",
+                    fontSize: "15.64px",
+                    textTransform: "initial",
+                    fontWeight: "700",
+                    padding: "17px 16px 17px 16px",
                   }}
                   variant="contained"
                   onClick={functionopenpopup}

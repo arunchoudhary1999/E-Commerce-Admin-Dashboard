@@ -62,10 +62,16 @@ export default function AddProduct() {
             <Box>
               <Button
                 sx={{
-                  background: "black",
+                  background: "#1C1D22",
                   mr: 2,
-                  borderRadius: "8px",
+                  borderRadius: "12px",
                   boxShadow: "none",
+                  width: "171px",
+                  height: "45px",
+                  fontSize: "15.64px",
+                  textTransform: "initial",
+                  fontWeight: "700",
+                  padding: "17px 16px 17px 16px",
                 }}
                 variant="contained"
               >
@@ -76,8 +82,14 @@ export default function AddProduct() {
               <Button
                 sx={{
                   background: "#F58634",
-                  borderRadius: "8px",
+                  borderRadius: "12px",
+                  height: "45px",
+                  fontSize: "15.64px",
                   boxShadow: "none",
+                  textTransform: "initial",
+                  fontWeight: "700",
+                  width: "161px",
+                  padding: "17px 16px 17px 16px",
                 }}
                 variant="contained"
               >
@@ -131,7 +143,7 @@ export default function AddProduct() {
                           labelId="demo-select-small-label"
                           id="demo-select-small"
                           value={time}
-                          label="Time"
+                          label="Select Product Category"
                           onChange={handleChange}
                           sx={{
                             background: "rgba(239, 241, 249, 0.6)",
@@ -173,31 +185,24 @@ export default function AddProduct() {
                       />
                     </Box>
                     <Box>
-                      <FormControl sx={{ mt: 1, mb: 1, width: "100%" }}>
-                        <InputLabel id="demo-select-small-label">
-                          Quantity in Stock
-                        </InputLabel>
-                        <Select
-                          labelId="demo-select-small-label"
-                          id="demo-select-small"
-                          value={time}
-                          label="Time"
-                          onChange={handleChange}
-                          sx={{
-                            background: "rgba(239, 241, 249, 0.6)",
-                          }}
-                        >
-                          <MenuItem value="">
-                            <em>None</em>
-                          </MenuItem>
-                          <MenuItem value={1}>1</MenuItem>
-                          <MenuItem value={2}>2</MenuItem>
-                          <MenuItem value={3}>3</MenuItem>
-                          <MenuItem value={4}>4</MenuItem>
-                          <MenuItem value={5}>5</MenuItem>
-                          <MenuItem value={6}>6</MenuItem>
-                        </Select>
-                      </FormControl>
+                      <TextField
+                        id="outlined-number"
+                        label="Quantity in Stock"
+                        type="number"
+                        value={time}
+                        onChange={handleChange}
+                        sx={{
+                          mt: 1,
+                          mb: 1,
+                          width: "100%",
+                          background: "rgba(239, 241, 249, 0.6)",
+                        }}
+                        InputProps={{
+                          inputProps: { min: "0", max: "10", step: "1" },
+                        }}
+                        variant="outlined"
+                        // handleChange('number')
+                      />
                     </Box>
 
                     <Box
@@ -245,7 +250,7 @@ export default function AddProduct() {
                           labelId="demo-select-small-label"
                           id="demo-select-small"
                           value={time}
-                          label="Time"
+                          label="Types"
                           onChange={handleChange}
                           sx={{
                             background: "rgba(239, 241, 249, 0.6)",
@@ -274,6 +279,7 @@ export default function AddProduct() {
                         }}
                       />
                     </Box>
+
                     <Box
                       sx={{
                         display: "flex",

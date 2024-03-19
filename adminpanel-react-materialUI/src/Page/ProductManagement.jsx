@@ -25,14 +25,23 @@ export default function ProductManagement() {
             <Button
               sx={{
                 background: "#F58634",
-                borderRadius: "8px",
+                borderRadius: "11.17px",
+                height: "45px",
+                width: "114px",
+                fontSize: "15.64px",
                 boxShadow: "none",
+                textTransform: "initial",
+                fontWeight: "700",
+                padding: 0,
               }}
               variant="contained"
             >
               <ListItem
-                disablePadding
-                sx={{ display: "block" }}
+                // disablePadding
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
                 onClick={() => {
                   navigate("/editproductdetails01");
                 }}
@@ -44,15 +53,17 @@ export default function ProductManagement() {
             <Button
               sx={{
                 background: "#F58634",
-                borderRadius: "8px",
+                borderRadius: "11.17px",
+                height: "45px",
+                fontSize: "15.64px",
                 boxShadow: "none",
+                textTransform: "initial",
+                fontWeight: "700",
               }}
               variant="contained"
             >
               <AddIcon />
               <ListItem
-                disablePadding
-                sx={{ display: "block" }}
                 onClick={() => {
                   navigate("/addproduct");
                 }}

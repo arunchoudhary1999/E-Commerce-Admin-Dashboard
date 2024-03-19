@@ -53,8 +53,13 @@ export default function PaymentsManagement() {
                 onClick={functionopenpopup}
                 sx={{
                   background: "#F58634",
-                  borderRadius: "8px",
+                  borderRadius: "12px",
+                  height: "45px",
+                  fontSize: "15.64px",
                   boxShadow: "none",
+                  textTransform: "initial",
+                  fontWeight: "700",
+                  padding: "17px 25px 17px 25px",
                 }}
                 variant="contained"
               >
@@ -494,8 +499,13 @@ export default function PaymentsManagement() {
                       background: "white",
                       borderColor: "red",
                       color: "red",
-                      borderRadius: "8px",
+                      borderRadius: "12px",
+                      height: "45px",
+                      fontSize: "15.64px",
                       boxShadow: "none",
+                      textTransform: "initial",
+                      fontWeight: "700",
+                      padding: "17px 16px 17px 16px",
                     }}
                     variant="outlined"
                   >
@@ -507,8 +517,13 @@ export default function PaymentsManagement() {
                       background: "white",
                       borderColor: "red",
                       color: "red",
-                      borderRadius: "8px",
+                      borderRadius: "12px",
+                      height: "45px",
+                      fontSize: "15.64px",
                       boxShadow: "none",
+                      textTransform: "initial",
+                      fontWeight: "700",
+                      padding: "17px 16px 17px 16px",
                     }}
                     variant="outlined"
                   >
@@ -519,8 +534,13 @@ export default function PaymentsManagement() {
                     color="error"
                     variant="contained"
                     sx={{
-                      borderRadius: "8px",
+                      borderRadius: "12px",
+                      height: "45px",
+                      fontSize: "15.64px",
                       boxShadow: "none",
+                      textTransform: "initial",
+                      fontWeight: "700",
+                      padding: "17px 25px 17px 25px",
                     }}
                   >
                     Close Order

@@ -86,10 +86,16 @@ export default function EditProductDetails() {
             <Box>
               <Button
                 sx={{
-                  background: "black",
+                  background: "#1C1D22",
                   mr: 2,
-                  borderRadius: "8px",
+                  borderRadius: "12px",
                   boxShadow: "none",
+                  width: "171px",
+                  height: "45px",
+                  fontSize: "15.64px",
+                  textTransform: "initial",
+                  fontWeight: "700",
+                  padding: "17px 16px 17px 16px",
                 }}
                 variant="contained"
               >
@@ -100,12 +106,18 @@ export default function EditProductDetails() {
               <Button
                 sx={{
                   background: "#F58634",
-                  borderRadius: "8px",
+                  borderRadius: "12px",
+                  height: "45px",
+                  fontSize: "15.64px",
                   boxShadow: "none",
+                  textTransform: "initial",
+                  fontWeight: "700",
+                  // width: "161px",
+                  padding: "17px 16px 17px 16px",
                 }}
                 variant="contained"
               >
-                <ListItem disablePadding>Save & Publish</ListItem>
+                <ListItem>Save & Publish</ListItem>
               </Button>
             </Box>
           </Box>
