@@ -19,6 +19,7 @@ body {
 .boxShadow {
   box-shadow: 0 4px 32px 0 rgba(34, 34, 34, 0.15);
   border-radius: 8px;
+  background-color: white !important;
 }
 
 .BarChartOne01 {
