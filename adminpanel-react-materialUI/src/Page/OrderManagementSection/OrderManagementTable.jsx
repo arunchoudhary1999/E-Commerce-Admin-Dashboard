@@ -652,8 +652,9 @@ export default function EnhancedTable() {
                         <Select
                           labelId="demo-select-small-label"
                           id="demo-select-small"
-                          value={time}
-                          onChange={thandleChange}
+                          // value={time}
+                          // onChange={thandleChange}
+                          defaultValue={"default"}
                           sx={{
                             boxShadow: "none",
                             ".MuiOutlinedInput-notchedOutline": { border: 0 },
@@ -672,7 +673,7 @@ export default function EnhancedTable() {
                           </MenuItem>
                           <MenuItem value={1}>{row.suger}</MenuItem>
                           <MenuItem value={2}>{row.protein}</MenuItem>
-                          <MenuItem value={3}>{row.vitamin}</MenuItem>
+                          <MenuItem value={"default"}>{row.vitamin}</MenuItem>
                         </Select>
                       </FormControl>
                     </TableCell>
